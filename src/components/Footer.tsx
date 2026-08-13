@@ -1,8 +1,14 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
-import { site } from "@/data/site";
+import { getSite } from "@/data";
+import type { Locale } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
-export function Footer() {
+export async function Footer({ locale }: { locale: Locale }) {
+  const site = getSite(locale);
+  const t = await getTranslations({ locale, namespace: "common" });
+  const tf = await getTranslations({ locale, namespace: "footer" });
+
   return (
     <footer className="border-t border-surface-border bg-surface/40">
       <div className="container-xl py-16">
@@ -14,19 +20,17 @@ export function Footer() {
               </span>
               INCODECRAFT
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-400">
-              Independent, developer-led digital studio. Design and development under one roof, from idea to launch.
-            </p>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-400">{tf("tagline")}</p>
             <p className="mt-6 font-mono text-xs text-ink-500">
               {site.location.city}, {site.location.country} — {site.location.serves}
             </p>
           </div>
 
-          <FooterColumn title="Services" links={site.footerLinks.services} />
-          <FooterColumn title="Studio" links={site.footerLinks.studio} />
+          <FooterColumn title={t("services")} links={site.footerLinks.services} />
+          <FooterColumn title={t("studio")} links={site.footerLinks.studio} />
 
           <div>
-            <p className="eyebrow mb-4">Contact</p>
+            <p className="eyebrow mb-4">{t("contact")}</p>
             <a href={`mailto:${site.email}`} className="text-sm text-ink-200 hover:text-signal">
               {site.email}
             </a>
@@ -42,13 +46,13 @@ export function Footer() {
               </a>
             </div>
             <Link href="/contact" className="btn-secondary mt-6 w-fit">
-              Start a project <ArrowUpRight size={16} />
+              {t("startProject")} <ArrowUpRight size={16} />
             </Link>
           </div>
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-surface-border pt-8 text-xs text-ink-500 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} INCODECRAFT. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} INCODECRAFT. {t("copyright")}</p>
           <div className="flex gap-6">
             {site.footerLinks.legal.map((l) => (
               <Link key={l.href} href={l.href} className="hover:text-ink-200">

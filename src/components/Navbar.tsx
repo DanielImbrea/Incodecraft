@@ -1,13 +1,17 @@
 "use client";
 
-import Link from "next/link";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { Link, usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import { site } from "@/data/site";
+import { getSite } from "@/data";
+import type { Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
-export function Navbar() {
+export function Navbar({ locale }: { locale: Locale }) {
+  const t = useTranslations("common");
+  const site = getSite(locale);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
@@ -55,19 +59,23 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-4 md:flex">
+          <LanguageSwitcher locale={locale} />
           <Link href="/contact" className="btn-primary">
-            Start a project <ArrowUpRight size={16} />
+            {t("startProject")} <ArrowUpRight size={16} />
           </Link>
         </div>
 
-        <button
-          aria-label={open ? "Close menu" : "Open menu"}
-          className="text-ink-100 md:hidden"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <LanguageSwitcher locale={locale} />
+          <button
+            aria-label={open ? t("closeMenu") : t("openMenu")}
+            className="text-ink-100"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </nav>
 
       {open && (
@@ -83,7 +91,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link href="/contact" className="btn-primary mt-3 w-full">
-              Start a project <ArrowUpRight size={16} />
+              {t("startProject")} <ArrowUpRight size={16} />
             </Link>
           </div>
         </div>

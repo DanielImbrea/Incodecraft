@@ -1,10 +1,21 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { ChevronRight } from "lucide-react";
 import { JsonLd } from "./JsonLd";
-import { site } from "@/data/site";
+import { getSite } from "@/data";
+import { localizedPath } from "@/lib/metadata";
+import type { Locale } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
 
-export function Breadcrumbs({ items }: { items: { label: string; href: string }[] }) {
-  const trail = [{ label: "Home", href: "/" }, ...items];
+export async function Breadcrumbs({
+  locale,
+  items,
+}: {
+  locale: Locale;
+  items: { label: string; href: string }[];
+}) {
+  const site = getSite(locale);
+  const t = await getTranslations({ locale, namespace: "common" });
+  const trail = [{ label: t("home"), href: "/" }, ...items];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -13,7 +24,7 @@ export function Breadcrumbs({ items }: { items: { label: string; href: string }[
       "@type": "ListItem",
       position: i + 1,
       name: item.label,
-      item: `${site.url}${item.href}`,
+      item: `${site.url}${localizedPath(locale, item.href)}`,
     })),
   };
 

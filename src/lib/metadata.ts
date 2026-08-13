@@ -1,22 +1,44 @@
-import type { Metadata } from "next";
-import { site } from "@/data/site";
+import type { Locale } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
+import { getSite } from "@/data";
 
 type SeoOptions = {
   title: string;
   description: string;
   path: string;
+  locale: Locale;
   image?: string;
   noIndex?: boolean;
 };
 
-export function buildMetadata({ title, description, path, image, noIndex }: SeoOptions): Metadata {
-  const url = `${site.url}${path}`;
+export function localizedPath(locale: Locale, path: string): string {
+  const normalized = path === "/" ? "" : path;
+  if (locale === routing.defaultLocale) {
+    return normalized || "/";
+  }
+  return `/en${normalized}`;
+}
+
+export function buildMetadata({ title, description, path, locale, image, noIndex }: SeoOptions) {
+  const site = getSite(locale);
+  const canonicalPath = localizedPath(locale, path);
+  const url = `${site.url}${canonicalPath === "/" ? "" : canonicalPath}`;
   const ogImage = image || `${site.url}/og-image.png`;
+  const ogLocale = locale === "ro" ? "ro_RO" : "en_US";
+
+  const languages: Record<string, string> = {};
+  for (const loc of routing.locales) {
+    const locPath = localizedPath(loc, path);
+    languages[loc] = `${site.url}${locPath === "/" ? "" : locPath}`;
+  }
 
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages,
+    },
     robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
     openGraph: {
       title,
@@ -24,11 +46,11 @@ export function buildMetadata({ title, description, path, image, noIndex }: SeoO
       url,
       siteName: site.name,
       images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
-      locale: "en_US",
-      type: "website",
+      locale: ogLocale,
+      type: "website" as const,
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary_large_image" as const,
       title,
       description,
       images: [ogImage],

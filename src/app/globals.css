@@ -79,7 +79,7 @@
   }
 
   .btn-primary {
-    @apply btn bg-signal text-ink-950 hover:shadow-glow hover:-translate-y-px;
+    @apply btn bg-signal text-white hover:shadow-glow hover:-translate-y-px;
   }
 
   .btn-secondary {

@@ -1,6 +1,6 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { ArrowUpRight } from "lucide-react";
-import type { Service } from "@/data/services";
+import type { Service } from "@/data";
 
 export function ServiceCard({ service, index }: { service: Service; index: number }) {
   return (

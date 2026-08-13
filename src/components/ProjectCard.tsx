@@ -1,8 +1,8 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { ArrowUpRight } from "lucide-react";
-import type { Project } from "@/data/projects";
+import type { Project } from "@/data";
 
-export function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
+export function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/work/${project.slug}`}
@@ -13,11 +13,6 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
         <span className="relative font-display text-2xl font-medium text-ink-600 transition-colors group-hover:text-signal/60">
           {project.name}
         </span>
-        {project.isPlaceholder && (
-          <span className="absolute right-3 top-3 rounded-xs border border-ink-600 bg-ink-950/80 px-2 py-1 font-mono text-[10px] uppercase tracking-wide text-ink-400">
-            Visuals coming soon
-          </span>
-        )}
       </div>
       <div className="p-6">
         <div className="mb-2 flex items-center justify-between">
@@ -28,9 +23,9 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
         <p className="mb-4 text-sm leading-relaxed text-ink-300">{project.summary}</p>
         <div className="flex items-center justify-between">
           <div className="flex flex-wrap gap-2">
-            {project.technology.slice(0, 3).map((t) => (
-              <span key={t} className="rounded-xs border border-surface-border px-2 py-1 font-mono text-[11px] text-ink-400">
-                {t}
+            {project.technology.slice(0, 3).map((tech) => (
+              <span key={tech} className="rounded-xs border border-surface-border px-2 py-1 font-mono text-[11px] text-ink-400">
+                {tech}
               </span>
             ))}
           </div>
