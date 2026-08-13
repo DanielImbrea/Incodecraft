@@ -1,7 +1,9 @@
 import { Link } from "@/i18n/routing";
 import { ArrowUpRight, Zap, ShieldCheck, GitBranch } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { HeroRotator } from "@/components/HeroRotator";
 import { Reveal } from "@/components/Reveal";
+import { Eyebrow, SignalDecor, TerminalLine } from "@/components/SignalAccent";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ServiceCard } from "@/components/ServiceCard";
 import { Cta } from "@/components/Cta";
@@ -35,6 +37,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
   const services = getServices(locale);
   const homeFaqs = getHomeFaqs(locale);
   const featuredProjects = projects.filter((p) => p.featured);
+  const heroSlides = t.raw("heroSlides") as { title: string; subtitle: string }[];
   const processSteps = t.raw("processSteps") as { n: string; title: string; desc: string }[];
 
   return (
@@ -46,10 +49,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
             <p className="eyebrow mb-6">{t("eyebrow")}</p>
           </Reveal>
           <Reveal immediate delay={0.05}>
-            <h1 className="max-w-4xl text-display-xl text-ink-50">{t("heroTitle")}</h1>
-          </Reveal>
-          <Reveal immediate delay={0.1}>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-300">{t("heroSubtitle")}</p>
+            <HeroRotator slides={heroSlides} />
           </Reveal>
           <Reveal immediate delay={0.15}>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -65,10 +65,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
             </div>
           </Reveal>
           <Reveal immediate delay={0.2}>
-            <p className="mt-8 font-mono text-sm text-ink-500">
-              <span className="text-signal">$</span> {t("terminal")}
-              <span className="cursor-blink" />
-            </p>
+            <TerminalLine className="mt-8">{t("terminal")}</TerminalLine>
           </Reveal>
         </div>
       </section>
@@ -121,9 +118,11 @@ export default async function HomePage({ params: { locale } }: { params: { local
       </section>
 
       <section className="section border-t border-surface-border bg-surface/30">
-        <div className="container-xl grid gap-12 md:grid-cols-2 md:gap-20">
+        <div className="container-xl relative grid gap-12 md:grid-cols-2 md:gap-20">
+          <SignalDecor variant="line-v" className="top-12 hidden md:block" />
+          <SignalDecor variant="glow-sm" className="right-0 top-1/2 -translate-y-1/2 md:right-8" />
           <div>
-            <Reveal><p className="eyebrow mb-4">{t("whyStudio")}</p></Reveal>
+            <Reveal><Eyebrow className="mb-4" cursor>{t("whyStudio")}</Eyebrow></Reveal>
             <Reveal delay={0.05}>
               <h2 className="text-display-md text-ink-50">{t("whyStudioTitle")}</h2>
             </Reveal>
@@ -197,12 +196,19 @@ export default async function HomePage({ params: { locale } }: { params: { local
       </section>
 
       <section className="section border-t border-surface-border">
-        <div className="container-xl">
+        <div className="container-xl relative">
+          <SignalDecor variant="glow-sm" className="left-0 top-0 -translate-x-1/3 -translate-y-1/4" />
           <div className="grid gap-12 md:grid-cols-[1fr_1.6fr]">
             <div>
-              <Reveal><p className="eyebrow mb-4">{t("faq")}</p></Reveal>
+              <Reveal><Eyebrow className="mb-4" cursor>{t("faq")}</Eyebrow></Reveal>
               <Reveal delay={0.05}>
                 <h2 className="max-w-sm text-display-md text-ink-50">{t("faqTitle")}</h2>
+              </Reveal>
+              <Reveal delay={0.08}>
+                <div className="mt-6 flex items-center gap-4">
+                  <SignalDecor variant="line-h" />
+                  <TerminalLine>{t("faqTerminal")}</TerminalLine>
+                </div>
               </Reveal>
             </div>
             <Reveal delay={0.1}>

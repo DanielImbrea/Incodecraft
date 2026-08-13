@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>A website with custom functionality</strong> — booking forms, gated content, integrations with other systems — moves further up the range because it stops being "just a website" and becomes lightweight software.</li>
       </ul>
       <h2>Typical ranges</h2>
-      <p>For the Romanian market, a professionally built, custom small-business website commonly falls in the €1,000–€3,000 range. A more ambitious marketing website with a bespoke design system and more pages typically lands between €3,000–€5,000. Once a project moves into custom web application territory — dashboards, portals, non-standard functionality — pricing moves into project-specific quotes rather than a fixed package.</p>
+      <p>For the Romanian market, a professionally built, custom small-business website commonly falls in the €1,000–€3,000 range. At INCODECRAFT, projects can start from €500 when the project is clearly and well defined. We work with a steady flow of clients, and for us what matters less is maximising each invoice and what matters more is delivering properly, leaving you satisfied and earning your recommendation — that is how we grow together over the long term, without compromising on quality. A more ambitious marketing website with a bespoke design system and more pages typically lands between €3,000–€5,000. Once a project moves into custom web application territory — dashboards, portals, non-standard functionality — pricing moves into project-specific quotes rather than a fixed package.</p>
       <h2>What actually changes the number</h2>
       <table>
         <thead><tr><th>Factor</th><th>Effect on price</th></tr></thead>

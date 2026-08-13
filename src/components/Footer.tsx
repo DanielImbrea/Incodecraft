@@ -3,6 +3,7 @@ import { Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
 import { getSite } from "@/data";
 import type { Locale } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import { TerminalLine } from "@/components/SignalAccent";
 
 export async function Footer({ locale }: { locale: Locale }) {
   const site = getSite(locale);
@@ -21,6 +22,7 @@ export async function Footer({ locale }: { locale: Locale }) {
               INCODECRAFT
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-400">{tf("tagline")}</p>
+            <TerminalLine className="mt-5">{tf("terminal")}</TerminalLine>
             <p className="mt-6 font-mono text-xs text-ink-500">
               {site.location.city}, {site.location.country} — {site.location.serves}
             </p>

@@ -28,12 +28,14 @@
     "copyright": "All rights reserved."
   },
   "footer": {
-    "tagline": "Independent, developer-led digital studio. Design and development under one roof, from idea to launch."
+    "tagline": "Independent, developer-led digital studio. Design and development under one roof, from idea to launch.",
+    "terminal": "status: available for projects"
   },
   "cta": {
     "eyebrow": "Start a project",
     "title": "Have a project in mind?",
     "subtitle": "Tell us what you're building. Every project starts with a short conversation about what you actually need.",
+    "terminal": "ready to build something",
     "readUseful": "Read something useful?",
     "readyToTalk": "Ready to talk about your project?",
     "haveProject": "Have a project?",
@@ -83,8 +85,16 @@
   "home": {
     "metaTitle": "INCODECRAFT — Independent Digital Studio | Websites · Applications · E-commerce · AI",
     "eyebrow": "Independent digital studio",
-    "heroTitle": "We build digital products that move businesses forward.",
-    "heroSubtitle": "Modern websites, e-commerce platforms and custom web applications, designed and developed for businesses that want more from the web than a template.",
+    "heroSlides": [
+      {
+        "title": "We build digital products\nthat move businesses forward.",
+        "subtitle": "Modern websites, e-commerce platforms and custom web applications, designed and developed for businesses that want more from the web than a template."
+      },
+      {
+        "title": "Have an idea but not sure\nexactly what needs to be built?",
+        "subtitle": "We can start with minimal brief. Throughout development we stay close at every step — evenings and weekends included — until we reach the outcome you want."
+      }
+    ],
     "terminal": "building for Websites · Applications · E-commerce · AI",
     "directCollaboration": "Direct collaboration",
     "directCollaborationText": "From idea to launch, you work directly with the person building your product.",
@@ -112,6 +122,7 @@
     "processTitle": "A clear process, from first call to launch.",
     "faq": "FAQ",
     "faqTitle": "Questions worth answering upfront.",
+    "faqTerminal": "clear answers from the start",
     "processSteps": [
       { "n": "01", "title": "Discovery", "desc": "Understanding your business, goals and constraints before any design work starts." },
       { "n": "02", "title": "Strategy", "desc": "Defining scope, architecture and success criteria in writing, so nothing is ambiguous." },
@@ -149,6 +160,7 @@
     "eyebrow": "Process",
     "title": "A structured process, built to remove ambiguity.",
     "subtitle": "Every project follows the same eight stages. The names stay the same regardless of scope — what changes is how much time each stage takes.",
+    "terminal": "from idea to launch",
     "stages": [
       { "n": "01", "title": "Discovery", "desc": "A conversation about your business, your goals for the project, and the constraints that matter — budget, timeline, existing systems. This stage exists to make sure the right project gets built, not just any project." },
       { "n": "02", "title": "Strategy", "desc": "Scope, architecture and success criteria get defined in writing. You'll know what's included, what isn't, and roughly how long it will take before any development starts." },
@@ -167,6 +179,7 @@
     "eyebrow": "Our work",
     "title": "Products built end to end, from architecture to interface.",
     "subtitle": "Every project here was designed and developed directly, without handoffs between separate design and engineering teams.",
+    "terminal": "projects · case studies",
     "caseStudy": "Case Study",
     "overview": "Project overview",
     "challenge": "The challenge",
@@ -212,7 +225,8 @@
     "breadcrumb": "Contact",
     "eyebrow": "Start a project",
     "title": "Tell us what you're building.",
-    "subtitle": "Every project starts with understanding what you actually need. Share a few details below and expect a reply within 1–2 business days with next steps."
+    "subtitle": "Every project starts with understanding what you actually need. Share a few details below and expect a reply within 1–2 business days with next steps.",
+    "terminal": "awaiting your message"
   },
   "terms": {
     "metaTitle": "Terms & Conditions",

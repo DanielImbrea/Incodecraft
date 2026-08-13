@@ -17,7 +17,7 @@ export const homeFaqs = [
   {
     question: "Cum începe de obicei un proiect?",
     answer:
-      "Cu o scurtă conversație de discovery despre ce vrei să construiești și de ce. Apoi primești un scope clar, timeline și preț înainte ca dezvoltarea să înceapă. Vezi pagina Proces pentru detalii complete.",
+      "Cu o scurtă conversație de discovery despre ce vrei să construiești și de ce. Apoi primești un proiect clar definit, timeline și preț înainte ca dezvoltarea să înceapă. Vezi pagina Proces pentru detalii complete.",
   },
   {
     question: "Puteți lucra cu un codebase existent?",
@@ -27,6 +27,6 @@ export const homeFaqs = [
   {
     question: "Cât costă de obicei o colaborare?",
     answer:
-      "Depinde complet de scope. Pagina Contact include intervale orientative de buget ca să te ajute să alegi conversația potrivită, dar fiecare ofertă se bazează pe proiectul tău specific.",
+      "Depinde complet de proiect. Pagina Contact include intervale orientative de buget ca să te ajute să alegi conversația potrivită, dar fiecare ofertă se bazează pe proiectul tău specific.",
   },
 ];

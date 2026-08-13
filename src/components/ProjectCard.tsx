@@ -10,7 +10,7 @@ export function ProjectCard({ project }: { project: Project }) {
     >
       <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden bg-gradient-to-br from-surface-raised to-ink-900">
         <div className="absolute inset-0 bg-grid bg-[size:28px_28px] opacity-40" />
-        <span className="relative font-display text-2xl font-medium text-ink-600 transition-colors group-hover:text-signal/60">
+        <span className="relative max-w-[90%] px-4 text-center text-balance font-display text-xl font-medium leading-tight text-ink-600 transition-colors group-hover:text-signal/60 md:text-2xl">
           {project.name}
         </span>
       </div>

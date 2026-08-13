@@ -16,13 +16,13 @@ export const blogPosts: BlogPost[] = [
     slug: "how-much-does-a-website-cost-in-romania",
     title: "Cât costă un website în România? O analiză realistă",
     excerpt:
-      "Prețul unui website variază enorm în funcție de scope. Iată o analiză realistă a factorilor care influențează costul pentru afaceri din România și nu numai.",
+      "Prețul unui website variază enorm în funcție de proiect. Iată o analiză realistă a factorilor care influențează costul pentru afaceri din România și nu numai.",
     category: "Dezvoltare web",
     author: "INCODECRAFT",
     date: "2026-01-12",
     readingTime: "7 min citire",
     contentHtml: `
-      <p>Una dintre primele întrebări pe care le pune orice antreprenor înainte de a începe un proiect de website este simplă: cât va costa? Răspunsul onest este că depinde foarte mult de scope, dar poți totuși să te gândești la asta într-un mod structurat.</p>
+      <p>Una dintre primele întrebări pe care le pune orice antreprenor înainte de a începe un proiect de website este simplă: cât va costa? Răspunsul onest este că depinde foarte mult de proiect, dar poți totuși să te gândești la asta într-un mod structurat.</p>
       <h2>Principalii factori de cost</h2>
       <p>Costul unui website este în mare parte o funcție a trei lucruri: cât de multă muncă de design personalizat este necesară, cât de multă funcționalitate custom are nevoie site-ul dincolo de o pagină de conținut și cât de multă strategie de conținut și copywriting implică.</p>
       <ul>
@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Un website cu funcționalitate custom</strong> — formulare de rezervare, conținut restricționat, integrări cu alte sisteme — urcă mai sus în interval, pentru că nu mai este „doar un website”, ci devine software ușor.</li>
       </ul>
       <h2>Intervale tipice</h2>
-      <p>Pentru piața din România, un website profesional, custom, pentru o afacere mică se încadrează de obicei în intervalul €1.000–€3.000. Un site de marketing mai ambițios, cu un design system personalizat și mai multe pagini, ajunge de regulă între €3.000–€5.000. Odată ce proiectul intră în teritoriul aplicației web custom — dashboard-uri, portaluri, funcționalitate nestandard — prețul trece la oferte specifice proiectului, nu la un pachet fix.</p>
+      <p>Pentru piața din România, un website profesional, custom, pentru o afacere mică se încadrează de obicei în intervalul €1.000–€3.000. La INCODECRAFT, proiectele pot pleca și de la €500, când proiectul e clar și bine definit. Avem un flux constant de proiecte, iar pentru noi contează mai puțin să maximizăm fiecare factură și mai mult să livrăm corect, să fii mulțumit și să ne recomanzi — astfel ajungem la mai mulți clienți pe termen lung, fără compromisuri la calitate. Un site de marketing mai ambițios, cu un design system personalizat și mai multe pagini, ajunge de regulă între €3.000–€5.000. Odată ce proiectul intră în teritoriul aplicației web custom — dashboard-uri, portaluri, funcționalitate nestandard — prețul trece la oferte specifice proiectului, nu la un pachet fix.</p>
       <h2>Ce schimbă de fapt cifra</h2>
       <table>
         <thead><tr><th>Factor</th><th>Efect asupra prețului</th></tr></thead>
@@ -236,9 +236,9 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Nevoi de raportare</strong> — de la o listă simplă până la analize detaliate</li>
       </ul>
       <h2>Puncte de plecare orientative</h2>
-      <p>Un instrument intern concentrat, care rezolvă o problemă clară — un calendar de rezervări, un CRM ușor pentru o echipă mică — pornește de obicei de la €3.000–€6.000. O platformă multi-rol mai completă, cu mai multe fluxuri de lucru de bază și integrări, pornește de regulă de la €6.000–€12.000, crescând de acolo în funcție de scope.</p>
+      <p>Un instrument intern concentrat, care rezolvă o problemă clară — un calendar de rezervări, un CRM ușor pentru o echipă mică — pornește de obicei de la €3.000–€6.000. O platformă multi-rol mai completă, cu mai multe fluxuri de lucru de bază și integrări, pornește de regulă de la €6.000–€12.000, crescând de acolo în funcție de proiect.</p>
       <h2>De ce „pachetele de aplicații web” cu preț fix funcționează rar</h2>
-      <p>Spre deosebire de un website, unde numărul de pagini oferă un proxy rezonabil pentru scope, costul unei aplicații web depinde de logica de business invizibilă într-un număr de pagini. De aceea ofertele serioase pentru aplicații web urmează aproape întotdeauna o conversație de discovery, nu o listă de prețuri fixă.</p>
+      <p>Spre deosebire de un website, unde numărul de pagini oferă un proxy rezonabil pentru amploarea proiectului, costul unei aplicații web depinde de logica de business invizibilă într-un număr de pagini. De aceea ofertele serioase pentru aplicații web urmează aproape întotdeauna o conversație de discovery, nu o listă de prețuri fixă.</p>
       <h2>Cum ții costurile sub control</h2>
       <p>Cea mai eficientă modalitate de a controla costul este să definești o primă versiune clară — cel mai mic set de funcționalități care rezolvă efectiv problema de bază — și să tratezi tot restul ca o a doua fază planificată, în loc să încerci să construiești viziunea completă din prima zi.</p>
     `,
@@ -258,7 +258,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Întrebări care merită puse</h2>
       <ul>
         <li>Pot arăta proiecte reale, funcționale — nu doar mockup-uri statice?</li>
-        <li>Își explică procesul clar, sau scope-ul este vag de la început?</li>
+        <li>Își explică procesul clar, sau proiectul este vag definit de la început?</li>
         <li>Vei deține codul final, sau este blocat într-un sistem proprietar?</li>
         <li>Cu cine vei comunica de fapt în timpul proiectului?</li>
         <li>Cum gestionează schimbările și reviziile după lansare?</li>

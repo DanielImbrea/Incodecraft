@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/Reveal";
+import { Eyebrow, SignalDecor, TerminalLine } from "@/components/SignalAccent";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Cta } from "@/components/Cta";
@@ -26,13 +27,17 @@ export default async function WorkPage({ params: { locale } }: { params: { local
     <>
       <Breadcrumbs locale={locale} items={[{ label: t("breadcrumb"), href: "/work" }]} />
       <section className="section pt-10">
-        <div className="container-xl">
-          <Reveal><p className="eyebrow mb-4">{t("eyebrow")}</p></Reveal>
+        <div className="container-xl relative">
+          <SignalDecor variant="line-v" className="top-4 hidden md:block" />
+          <Reveal><Eyebrow className="mb-4" cursor>{t("eyebrow")}</Eyebrow></Reveal>
           <Reveal delay={0.05}>
             <h1 className="max-w-2xl text-display-lg text-ink-50">{t("title")}</h1>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 max-w-xl text-ink-300">{t("subtitle")}</p>
+          </Reveal>
+          <Reveal delay={0.12}>
+            <TerminalLine className="mt-6">{t("terminal")}</TerminalLine>
           </Reveal>
 
           <div className="mt-16 grid gap-6 md:grid-cols-2">

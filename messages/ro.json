@@ -28,12 +28,14 @@
     "copyright": "Toate drepturile rezervate."
   },
   "footer": {
-    "tagline": "Studio digital independent, condus de developer. Design și dezvoltare sub același acoperiș, de la idee la lansare."
+    "tagline": "Studio digital independent, condus de developer. Design și dezvoltare sub același acoperiș, de la idee la lansare.",
+    "terminal": "status: disponibil pentru proiecte"
   },
   "cta": {
     "eyebrow": "Începe un proiect",
     "title": "Ai un proiect în minte?",
     "subtitle": "Spune-ne ce construiești. Fiecare proiect începe cu o scurtă conversație despre ce ai nevoie de fapt.",
+    "terminal": "gata să construim ceva",
     "readUseful": "Ai citit ceva util?",
     "readyToTalk": "Gata să vorbim despre proiectul tău?",
     "haveProject": "Ai un proiect?",
@@ -83,8 +85,16 @@
   "home": {
     "metaTitle": "INCODECRAFT — Studio Digital Independent | Website-uri · Aplicații · E-commerce · AI",
     "eyebrow": "Studio digital independent",
-    "heroTitle": "Construim produse digitale care duc afacerile mai departe.",
-    "heroSubtitle": "Website-uri moderne, platforme e-commerce și aplicații web personalizate, proiectate și dezvoltate pentru afaceri care vor mai mult de la web decât un template.",
+    "heroSlides": [
+      {
+        "title": "Construim produse\ndigitale care duc\nafacerile mai departe.",
+        "subtitle": "Website-uri moderne, platforme e-commerce și aplicații web personalizate, proiectate și dezvoltate pentru afaceri care vor mai mult de la web decât un template."
+      },
+      {
+        "title": "Ai o idee, dar nu știi\nexact ce trebuie făcut?",
+        "subtitle": "Putem porni chiar și cu puține informații. Pe parcursul dezvoltării rămânem aproape la fiecare pas — seara, în weekend — până ajungem împreună la rezultatul pe care îl vrei."
+      }
+    ],
     "terminal": "building for Website-uri · Aplicații · E-commerce · AI",
     "directCollaboration": "Colaborare directă",
     "directCollaborationText": "De la idee la lansare, lucrezi direct cu persoana care construiește produsul tău.",
@@ -100,7 +110,7 @@
     "whyStudioTitle": "Design și dezvoltare sub același acoperiș.",
     "whyStudioP1": "INCODECRAFT este un studio digital independent, condus de developer. Nu există account manager care să traducă cerințele tale către o echipă de design separată, și nici echipă de inginerie separată care să traducă design-urile în cod care nu se potrivește niciodată cu mockup-ul. O persoană, atenție la nivel senior, de la strategie la produs livrat.",
     "expectTitle": "Ce poți aștepta",
-    "expectText": "Scope și preț clar înainte ca munca să înceapă, comunicare transparentă pe parcurs și un produs construit pe cod curat, mentenabil.",
+    "expectText": "Proiect și preț clar definite înainte ca munca să înceapă, comunicare transparentă pe parcurs și un produs construit pe cod curat, mentenabil.",
     "focusTitle": "Construit cu focus pe",
     "focusText": "Performanță, accesibilitate și vizibilitate în căutări din primul commit — nu adăugate în grabă înainte de lansare.",
     "layersTitle": "Fără straturi inutile",
@@ -112,9 +122,10 @@
     "processTitle": "Un proces clar, de la primul apel la lansare.",
     "faq": "Întrebări frecvente",
     "faqTitle": "Întrebări care merită răspunsuri din start.",
+    "faqTerminal": "răspunsuri clare, din start",
     "processSteps": [
       { "n": "01", "title": "Discovery", "desc": "Înțelegerea afacerii, obiectivelor și constrângerilor tale înainte ca orice design să înceapă." },
-      { "n": "02", "title": "Strategie", "desc": "Definirea scope-ului, arhitecturii și criteriilor de succes în scris, ca nimic să nu fie ambiguu." },
+      { "n": "02", "title": "Strategie", "desc": "Definirea proiectului, arhitecturii și criteriilor de succes în scris, ca nimic să nu fie ambiguu." },
       { "n": "03", "title": "Design & Build", "desc": "Design-ul și dezvoltarea se întâmplă sub același acoperiș, iterate împreună, nu transferate în etape." },
       { "n": "04", "title": "Lansare & Creștere", "desc": "Testare, lansare și o cale clară pentru îmbunătățiri continue odată ce produsul e live." }
     ]
@@ -133,7 +144,7 @@
     "principlesTitle": "Principiile din spatele fiecărui proiect.",
     "locationEyebrow": "Cu sediul în Iași, lucrăm global",
     "locationTitle": "Cu sediul în Iași, România — lucrăm cu afaceri din România, Moldova și internațional.",
-    "locationText": "Toată colaborarea se întâmplă remote by default, cu scope scris clar și update-uri regulate — astfel distanța nu e niciodată un obstacol pentru un proiect care avansează la timp.",
+    "locationText": "Toată colaborarea se întâmplă remote by default, cu proiect definit clar în scris și update-uri regulate — astfel distanța nu e niciodată un obstacol pentru un proiect care avansează la timp.",
     "principles": [
       { "title": "Colaborare directă", "text": "Lucrezi cu persoana care scrie de fapt codul și ia deciziile tehnice, de la prima conversație la lansare." },
       { "title": "Design și dezvoltare, împreună", "text": "Deciziile de interfață și inginerie sunt luate de aceeași persoană, în aceeași sesiune — nu transferate între departamente." },
@@ -143,15 +154,16 @@
     ]
   },
   "process": {
-    "metaTitle": "Proces — Cum Sunt Scopate, Construite și Lansate Proiectele",
+    "metaTitle": "Proces — Cum Sunt Definite, Construite și Lansate Proiectele",
     "metaDescription": "Un proces clar, în opt etape, pentru fiecare proiect INCODECRAFT — de la discovery și strategie, prin design, dezvoltare, testare, lansare și îmbunătățire continuă.",
     "breadcrumb": "Proces",
     "eyebrow": "Proces",
     "title": "Un proces structurat, construit să elimine ambiguitatea.",
-    "subtitle": "Fiecare proiect urmează aceleași opt etape. Numele rămân aceleași indiferent de scope — ce se schimbă e cât timp ia fiecare etapă.",
+    "subtitle": "Fiecare proiect urmează aceleași opt etape. Numele rămân aceleași indiferent de proiect — ce se schimbă e cât timp ia fiecare etapă.",
+    "terminal": "de la idee la lansare",
     "stages": [
       { "n": "01", "title": "Discovery", "desc": "O conversație despre afacerea ta, obiectivele proiectului și constrângerile care contează — buget, timeline, sisteme existente. Această etapă există ca să ne asigurăm că se construiește proiectul potrivit, nu orice proiect." },
-      { "n": "02", "title": "Strategie", "desc": "Scope-ul, arhitectura și criteriile de succes sunt definite în scris. Vei ști ce e inclus, ce nu, și cam cât durează înainte ca dezvoltarea să înceapă." },
+      { "n": "02", "title": "Strategie", "desc": "Proiectul, arhitectura și criteriile de succes sunt definite în scris. Vei ști ce e inclus, ce nu, și cam cât durează înainte ca dezvoltarea să înceapă." },
       { "n": "03", "title": "UX / Structură", "desc": "Arhitectura informațională și flow-urile utilizator sunt mapate — cum se conectează paginile, ce face utilizatorul la fiecare pas și unde se iau deciziile importante." },
       { "n": "04", "title": "Design", "desc": "Un design system vizual e construit în jurul brandului tău: tipografie, culoare, spațiere și componente — nu un template generic ajustat ca să se potrivească." },
       { "n": "05", "title": "Dezvoltare", "desc": "Design-ul și codul se unesc. Pentru că aceeași persoană se ocupă de ambele, deciziile de design sunt rafinate pe cod real, funcțional, nu mockup-uri statice." },
@@ -167,6 +179,7 @@
     "eyebrow": "Proiectele noastre",
     "title": "Produse construite end to end, de la arhitectură la interfață.",
     "subtitle": "Fiecare proiect de aici a fost proiectat și dezvoltat direct, fără transferuri între echipe separate de design și inginerie.",
+    "terminal": "proiecte · case studies",
     "caseStudy": "Case Study",
     "overview": "Prezentare proiect",
     "challenge": "Provocarea",
@@ -212,7 +225,8 @@
     "breadcrumb": "Contact",
     "eyebrow": "Începe un proiect",
     "title": "Spune-ne ce construiești.",
-    "subtitle": "Fiecare proiect începe cu înțelegerea a ceea ce ai nevoie de fapt. Completează câteva detalii mai jos și așteaptă un răspuns în 1–2 zile lucrătoare cu pașii următori."
+    "subtitle": "Fiecare proiect începe cu înțelegerea a ceea ce ai nevoie de fapt. Completează câteva detalii mai jos și așteaptă un răspuns în 1–2 zile lucrătoare cu pașii următori.",
+    "terminal": "așteptăm mesajul tău"
   },
   "terms": {
     "metaTitle": "Termeni și condiții",

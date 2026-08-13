@@ -14,6 +14,16 @@
   50%, 100% { opacity: 0; }
 }
 
+@keyframes signal-breathe {
+  0%, 100% { opacity: 0.18; }
+  50% { opacity: 0.55; }
+}
+
+@keyframes signal-breathe-soft {
+  0%, 100% { opacity: 0.08; transform: scale(1); }
+  50% { opacity: 0.28; transform: scale(1.06); }
+}
+
 @layer base {
   * {
     @apply border-surface-border;
@@ -72,6 +82,14 @@
   .eyebrow::before {
     content: "// ";
     @apply text-ink-500;
+  }
+
+  .eyebrow-centered {
+    @apply inline-flex items-center justify-center gap-1.5;
+  }
+
+  .eyebrow-centered::before {
+    content: "//";
   }
 
   .btn {
@@ -185,5 +203,19 @@
     background: #FF6A39;
     vertical-align: -0.15em;
     animation: blink 1.1s step-start infinite;
+  }
+
+  .signal-breathe {
+    animation: signal-breathe 3.2s ease-in-out infinite;
+  }
+
+  .signal-breathe-soft {
+    animation: signal-breathe-soft 4.5s ease-in-out infinite;
+  }
+
+  .signal-accent-h {
+    height: 2px;
+    width: 2.75rem;
+    background: linear-gradient(90deg, #FF6A39, transparent);
   }
 }

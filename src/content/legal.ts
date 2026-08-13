@@ -14,11 +14,11 @@ export const termsContent: Record<Locale, LegalPage> = {
     sections: [
       {
         title: "1. Utilizarea acestui website",
-        body: "Acest website este oferit în scop informativ pentru a reprezenta serviciile INCODECRAFT. Conținutul de pe acest site nu trebuie tratat ca o ofertă sau cotație obligatorie; scope-ul și prețul real al proiectului sunt confirmate direct cu fiecare client.",
+        body: "Acest website este oferit în scop informativ pentru a reprezenta serviciile INCODECRAFT. Conținutul de pe acest site nu trebuie tratat ca o ofertă sau cotație obligatorie; detaliile proiectului și prețul real sunt confirmate direct cu fiecare client.",
       },
       {
         title: "2. Angajamente de proiect",
-        body: "Orice proiect de dezvoltare întreprins de INCODECRAFT este guvernat de un acord scris separat, specific acelui proiect, care acoperă scope, timeline, preț și livrabile. Acești termeni generali nu înlocuiesc acel acord.",
+        body: "Orice proiect de dezvoltare întreprins de INCODECRAFT este guvernat de un acord scris separat, specific acelui proiect, care acoperă proiectul, timeline-ul, prețul și livrabilele. Acești termeni generali nu înlocuiesc acel acord.",
       },
       {
         title: "3. Proprietate intelectuală",
