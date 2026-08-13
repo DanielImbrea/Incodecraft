@@ -64,7 +64,7 @@
     "sending": "Se trimite",
     "sendDetails": "Trimite detaliile proiectului",
     "messageSent": "Mesaj trimis",
-    "successMessage": "Mulțumim că ne-ai contactat. Fiecare proiect începe cu înțelegerea a ceea ce ai nevoie de fapt — așteaptă un răspuns în 1–2 zile lucrătoare.",
+    "successMessage": "Mulțumim că ne-ai contactat. Fiecare proiect începe cu înțelegerea a ceea ce ai nevoie de fapt — îți răspundem prompt, de obicei în aceeași zi lucrătoare.",
     "errorMessage": "Ceva nu a mers bine. Te rugăm să ne scrii la",
     "errorDirect": "direct.",
     "projectTypes": ["Website", "E-commerce", "Aplicație web", "SaaS", "Aplicație AI", "Software custom", "Altele"],
