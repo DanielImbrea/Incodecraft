@@ -54,7 +54,7 @@ export async function Footer({ locale }: { locale: Locale }) {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-surface-border pt-8 text-xs text-ink-500 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} INCODECRAFT. {t("copyright")}</p>
+          <p>© 2023–{new Date().getFullYear()} INCODECRAFT. {t("copyright")}</p>
           <div className="flex gap-6">
             {site.footerLinks.legal.map((l) => (
               <Link key={l.href} href={l.href} className="hover:text-ink-200">
