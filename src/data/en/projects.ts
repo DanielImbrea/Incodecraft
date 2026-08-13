@@ -22,6 +22,78 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "presentation-websites",
+    name: "Presentation Websites",
+    category: "Web Development",
+    summary:
+      "Custom corporate and brochure websites — fast, clear and built to represent a business credibly online.",
+    description:
+      "Multi-page sites for companies, freelancers and local services: clear structure, brand-matched design, contact forms and an SEO-ready foundation — no generic template.",
+    year: "2023–2025",
+    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    featured: true,
+    caseStudy: {
+      overview:
+        "Many businesses need a site that explains what they do, builds trust and turns visitors into leads — not a cluttered page or a template that looks like ten other sites in the same industry.",
+      challenge:
+        "Cheap template sites look fine at launch but limit structure, speed and differentiation as the business grows or wants to appear seriously in search results.",
+      approach:
+        "Each page's content and goals are defined first — who the audience is, what action we want from the visitor — then design and implementation follow that structure, not the other way around.",
+      solution:
+        "Custom sites with service pages, about, contact, blog or dedicated landing pages, built in Next.js for speed, accessibility and correct metadata from day one.",
+      features: [
+        "Custom design aligned with the brand's visual identity",
+        "Clear structure: services, about, contact, legal",
+        "Contact forms and lead capture",
+        "On-page SEO and per-page metadata",
+        "High performance and responsive layout",
+        "Code the client owns, no closed platform",
+      ],
+      outcome:
+        "The business has a site that represents it properly, loads fast and can be extended with new pages or features without switching platforms.",
+      takeaways: [
+        "A successful presentation site is clear first, impressive second.",
+        "Building custom from the start costs less than rebuilding a template a year later.",
+      ],
+    },
+  },
+  {
+    slug: "portfolio-websites",
+    name: "Portfolio Websites",
+    category: "Web Development",
+    summary:
+      "Portfolio sites for creators, agencies and professionals — projects, case studies and contact in a clean, fast format that's easy to update.",
+    description:
+      "Custom online portfolios for designers, developers, photographers, architects and small studios — focused on the work shown, not unnecessary effects.",
+    year: "2023–2025",
+    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    featured: true,
+    caseStudy: {
+      overview:
+        "A good portfolio does the filtering work: it quickly shows what kind of work you do, how you think and how someone can reach you — without the visitor hunting through scattered links.",
+      challenge:
+        "Free portfolio platforms or generic templates look similar, load slowly or don't allow the case study structure a senior professional needs.",
+      approach:
+        "Representative projects are selected and ordered strategically, each with brief context — problem, approach, outcome — not just a grid of images with no explanation.",
+      solution:
+        "A custom portfolio site with a home page, project grid, case study pages, about page and direct contact — easy to extend when a new project is ready.",
+      features: [
+        "Project grid with categories and filtering",
+        "Case study pages with project detail",
+        "About page and contact section",
+        "Design that puts the work centre stage, not the template",
+        "Performance optimised for fast image loading",
+        "Structure that's easy to update when new projects are added",
+      ],
+      outcome:
+        "The professional has a portfolio that looks as good as the work it presents — and can add new projects without rebuilding the site.",
+      takeaways: [
+        "Fewer projects explained well beat a large grid with no context.",
+        "A portfolio that works well on mobile matters just as much as on desktop.",
+      ],
+    },
+  },
+  {
     slug: "pixiqueai",
     name: "PixiqueAI",
     category: "AI SaaS Platform",
@@ -244,78 +316,6 @@ export const projects: Project[] = [
       takeaways: [
         "Mapping edge cases in the catalog before building the UI avoided costly rework.",
         "A custom admin panel pays for itself quickly once a team relies on it daily.",
-      ],
-    },
-  },
-  {
-    slug: "presentation-websites",
-    name: "Presentation Websites",
-    category: "Web Development",
-    summary:
-      "Custom corporate and brochure websites — fast, clear and built to represent a business credibly online.",
-    description:
-      "Multi-page sites for companies, freelancers and local services: clear structure, brand-matched design, contact forms and an SEO-ready foundation — no generic template.",
-    year: "2023–2025",
-    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    featured: true,
-    caseStudy: {
-      overview:
-        "Many businesses need a site that explains what they do, builds trust and turns visitors into leads — not a cluttered page or a template that looks like ten other sites in the same industry.",
-      challenge:
-        "Cheap template sites look fine at launch but limit structure, speed and differentiation as the business grows or wants to appear seriously in search results.",
-      approach:
-        "Each page's content and goals are defined first — who the audience is, what action we want from the visitor — then design and implementation follow that structure, not the other way around.",
-      solution:
-        "Custom sites with service pages, about, contact, blog or dedicated landing pages, built in Next.js for speed, accessibility and correct metadata from day one.",
-      features: [
-        "Custom design aligned with the brand's visual identity",
-        "Clear structure: services, about, contact, legal",
-        "Contact forms and lead capture",
-        "On-page SEO and per-page metadata",
-        "High performance and responsive layout",
-        "Code the client owns, no closed platform",
-      ],
-      outcome:
-        "The business has a site that represents it properly, loads fast and can be extended with new pages or features without switching platforms.",
-      takeaways: [
-        "A successful presentation site is clear first, impressive second.",
-        "Building custom from the start costs less than rebuilding a template a year later.",
-      ],
-    },
-  },
-  {
-    slug: "portfolio-websites",
-    name: "Portfolio Websites",
-    category: "Web Development",
-    summary:
-      "Portfolio sites for creators, agencies and professionals — projects, case studies and contact in a clean, fast format that's easy to update.",
-    description:
-      "Custom online portfolios for designers, developers, photographers, architects and small studios — focused on the work shown, not unnecessary effects.",
-    year: "2023–2025",
-    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    featured: true,
-    caseStudy: {
-      overview:
-        "A good portfolio does the filtering work: it quickly shows what kind of work you do, how you think and how someone can reach you — without the visitor hunting through scattered links.",
-      challenge:
-        "Free portfolio platforms or generic templates look similar, load slowly or don't allow the case study structure a senior professional needs.",
-      approach:
-        "Representative projects are selected and ordered strategically, each with brief context — problem, approach, outcome — not just a grid of images with no explanation.",
-      solution:
-        "A custom portfolio site with a home page, project grid, case study pages, about page and direct contact — easy to extend when a new project is ready.",
-      features: [
-        "Project grid with categories and filtering",
-        "Case study pages with project detail",
-        "About page and contact section",
-        "Design that puts the work centre stage, not the template",
-        "Performance optimised for fast image loading",
-        "Structure that's easy to update when new projects are added",
-      ],
-      outcome:
-        "The professional has a portfolio that looks as good as the work it presents — and can add new projects without rebuilding the site.",
-      takeaways: [
-        "Fewer projects explained well beat a large grid with no context.",
-        "A portfolio that works well on mobile matters just as much as on desktop.",
       ],
     },
   },

@@ -22,6 +22,78 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "presentation-websites",
+    name: "Site-uri de prezentare",
+    category: "Dezvoltare web",
+    summary:
+      "Website-uri corporate și site-uri de prezentare construite custom — rapide, clare și optimizate pentru a reprezenta credibil afacerea online.",
+    description:
+      "Site-uri multi-pagină pentru companii, freelanceri și servicii locale: structură clară, design adaptat brandului, formulare de contact și fundație SEO-ready — fără template generic.",
+    year: "2023–2025",
+    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    featured: true,
+    caseStudy: {
+      overview:
+        "Multe afaceri au nevoie de un site care să explice ce fac, să inspire încredere și să transforme vizitatorii în lead-uri — nu o pagină aglomerată sau un template care arată ca alte zece site-uri din aceeași industrie.",
+      challenge:
+        "Site-urile ieftine pe template par bine la lansare, dar limitează structura, viteza și diferențierea pe măsură ce afacerea crește sau vrea să apară serios în căutări.",
+      approach:
+        "Conținutul și obiectivele fiecărei pagini sunt stabilite mai întâi — cine e audiența, ce acțiune vrem de la vizitator — apoi design-ul și implementarea urmează acea structură, nu invers.",
+      solution:
+        "Site-uri custom cu pagini de servicii, despre, contact, blog sau landing page-uri dedicate, implementate în Next.js pentru viteză, accesibilitate și metadata corectă din start.",
+      features: [
+        "Design custom aliniat identității vizuale a brandului",
+        "Structură clară: servicii, despre, contact, legal",
+        "Formulare de contact și captare lead-uri",
+        "Optimizare SEO on-page și metadata per pagină",
+        "Performanță ridicată și layout responsive",
+        "Cod pe care clientul îl deține, fără platformă închisă",
+      ],
+      outcome:
+        "Afacerea are un site care o reprezintă corect, se încarcă rapid și poate fi extins cu pagini sau funcționalități noi fără să schimbe platforma.",
+      takeaways: [
+        "Un site de prezentare reușit e clar mai întâi, impresionant al doilea.",
+        "Construit custom de la început costă mai puțin decât să refaci un template peste un an.",
+      ],
+    },
+  },
+  {
+    slug: "portfolio-websites",
+    name: "Portofolii",
+    category: "Dezvoltare web",
+    summary:
+      "Site-uri portofoliu pentru creatori, agenții și profesioniști — proiecte, studii de caz și contact într-un format curat, rapid și ușor de actualizat.",
+    description:
+      "Portofolii online construite custom pentru designeri, developeri, fotografi, arhitecți și studiouri mici — focus pe munca expusă, nu pe efecte inutile.",
+    year: "2023–2025",
+    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    featured: true,
+    caseStudy: {
+      overview:
+        "Un portofoliu bun face treaba de filtrare: arată rapid ce fel de muncă faci, cum gândești și cum poate cineva să te contacteze — fără ca vizitatorul să caute prin link-uri împrăștiate.",
+      challenge:
+        "Platformele de portofoliu gratuite sau template-urile generice arată similar, se încarcă lent sau nu permit structura de case study de care un profesionist senior are nevoie.",
+      approach:
+        "Proiectele reprezentative sunt selectate și ordonate strategic, fiecare cu context scurt — problemă, abordare, rezultat — nu doar o grilă de imagini fără explicație.",
+      solution:
+        "Site portofoliu custom cu pagină principală, grid de proiecte, pagini de case study, pagină despre și contact direct — ușor de extins când apare un proiect nou.",
+      features: [
+        "Grid de proiecte cu categorii și filtrare",
+        "Pagini case study cu detaliu proiect",
+        "Pagină despre și secțiune contact",
+        "Design care pune munca în centru, nu template-ul",
+        "Performanță optimizată pentru încărcare rapidă imagini",
+        "Structură ușor de actualizat când se adaugă proiecte noi",
+      ],
+      outcome:
+        "Profesionistul are un portofoliu care arată la fel de bine ca munca pe care o prezintă — și poate adăuga proiecte noi fără să reconstruiască site-ul.",
+      takeaways: [
+        "Mai puține proiecte bine explicate bat o grilă mare fără context.",
+        "Un portofoliu rapid pe mobil contează la fel de mult ca pe desktop.",
+      ],
+    },
+  },
+  {
     slug: "pixiqueai",
     name: "PixiqueAI",
     category: "Platformă AI SaaS",
@@ -244,78 +316,6 @@ export const projects: Project[] = [
       takeaways: [
         "Maparea edge case-urilor din catalog înainte de a construi UI-ul a evitat rework costisitor.",
         "Un panou admin custom se amortizează rapid odată ce o echipă se bazează pe el zilnic.",
-      ],
-    },
-  },
-  {
-    slug: "presentation-websites",
-    name: "Site-uri de prezentare",
-    category: "Dezvoltare web",
-    summary:
-      "Website-uri corporate și site-uri de prezentare construite custom — rapide, clare și optimizate pentru a reprezenta credibil afacerea online.",
-    description:
-      "Site-uri multi-pagină pentru companii, freelanceri și servicii locale: structură clară, design adaptat brandului, formulare de contact și fundație SEO-ready — fără template generic.",
-    year: "2023–2025",
-    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    featured: true,
-    caseStudy: {
-      overview:
-        "Multe afaceri au nevoie de un site care să explice ce fac, să inspire încredere și să transforme vizitatorii în lead-uri — nu o pagină aglomerată sau un template care arată ca alte zece site-uri din aceeași industrie.",
-      challenge:
-        "Site-urile ieftine pe template par bine la lansare, dar limitează structura, viteza și diferențierea pe măsură ce afacerea crește sau vrea să apară serios în căutări.",
-      approach:
-        "Conținutul și obiectivele fiecărei pagini sunt stabilite mai întâi — cine e audiența, ce acțiune vrem de la vizitator — apoi design-ul și implementarea urmează acea structură, nu invers.",
-      solution:
-        "Site-uri custom cu pagini de servicii, despre, contact, blog sau landing page-uri dedicate, implementate în Next.js pentru viteză, accesibilitate și metadata corectă din start.",
-      features: [
-        "Design custom aliniat identității vizuale a brandului",
-        "Structură clară: servicii, despre, contact, legal",
-        "Formulare de contact și captare lead-uri",
-        "Optimizare SEO on-page și metadata per pagină",
-        "Performanță ridicată și layout responsive",
-        "Cod pe care clientul îl deține, fără platformă închisă",
-      ],
-      outcome:
-        "Afacerea are un site care o reprezintă corect, se încarcă rapid și poate fi extins cu pagini sau funcționalități noi fără să schimbe platforma.",
-      takeaways: [
-        "Un site de prezentare reușit e clar mai întâi, impresionant al doilea.",
-        "Construit custom de la început costă mai puțin decât să refaci un template peste un an.",
-      ],
-    },
-  },
-  {
-    slug: "portfolio-websites",
-    name: "Portofolii",
-    category: "Dezvoltare web",
-    summary:
-      "Site-uri portofoliu pentru creatori, agenții și profesioniști — proiecte, studii de caz și contact într-un format curat, rapid și ușor de actualizat.",
-    description:
-      "Portofolii online construite custom pentru designeri, developeri, fotografi, arhitecți și studiouri mici — focus pe munca expusă, nu pe efecte inutile.",
-    year: "2023–2025",
-    technology: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    featured: true,
-    caseStudy: {
-      overview:
-        "Un portofoliu bun face treaba de filtrare: arată rapid ce fel de muncă faci, cum gândești și cum poate cineva să te contacteze — fără ca vizitatorul să caute prin link-uri împrăștiate.",
-      challenge:
-        "Platformele de portofoliu gratuite sau template-urile generice arată similar, se încarcă lent sau nu permit structura de case study de care un profesionist senior are nevoie.",
-      approach:
-        "Proiectele reprezentative sunt selectate și ordonate strategic, fiecare cu context scurt — problemă, abordare, rezultat — nu doar o grilă de imagini fără explicație.",
-      solution:
-        "Site portofoliu custom cu pagină principală, grid de proiecte, pagini de case study, pagină despre și contact direct — ușor de extins când apare un proiect nou.",
-      features: [
-        "Grid de proiecte cu categorii și filtrare",
-        "Pagini case study cu detaliu proiect",
-        "Pagină despre și secțiune contact",
-        "Design care pune munca în centru, nu template-ul",
-        "Performanță optimizată pentru încărcare rapidă imagini",
-        "Structură ușor de actualizat când se adaugă proiecte noi",
-      ],
-      outcome:
-        "Profesionistul are un portofoliu care arată la fel de bine ca munca pe care o prezintă — și poate adăuga proiecte noi fără să reconstruiască site-ul.",
-      takeaways: [
-        "Mai puține proiecte bine explicate bat o grilă mare fără context.",
-        "Un portofoliu rapid pe mobil contează la fel de mult ca pe desktop.",
       ],
     },
   },
