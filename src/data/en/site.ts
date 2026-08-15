@@ -29,7 +29,7 @@ export const site = {
       { label: "Web Development", href: "/services/web-development" },
       { label: "Web Applications", href: "/services/web-applications" },
       { label: "E-commerce", href: "/services/ecommerce" },
-      { label: "AI Development", href: "/services/ai-development" },
+      { label: "AI integrations", href: "/services/ai-development" },
     ],
     studio: [
       { label: "Work", href: "/work" },
