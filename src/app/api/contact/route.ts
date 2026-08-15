@@ -10,6 +10,14 @@ import {
   type ContactPayload,
 } from "@/lib/contact-guard";
 
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function formatEmailHtml(body: ContactPayload) {
   const rows = [
     ["Nume", body.name],
@@ -26,15 +34,29 @@ function formatEmailHtml(body: ContactPayload) {
     .filter(([, value]) => value)
     .map(
       ([label, value]) =>
-        `<tr><td style="padding:8px 12px 8px 0;color:#888;font-family:monospace;font-size:12px;text-transform:uppercase;vertical-align:top;">${label}</td><td style="padding:8px 0;color:#eee;">${value}</td></tr>`,
+        `<tr>
+          <td style="padding:10px 16px 10px 0;color:#6B7280;font-family:Consolas,Monaco,monospace;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;vertical-align:top;white-space:nowrap;">${label}</td>
+          <td style="padding:10px 0;color:#111827;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;vertical-align:top;">${escapeHtml(String(value))}</td>
+        </tr>`,
     )
     .join("");
 
+  const description = escapeHtml(body.description ?? "");
+
   return `
-    <h2 style="color:#fff;font-family:sans-serif;">Cerere nouă de proiect — INCODECRAFT</h2>
-    <table style="border-collapse:collapse;">${details}</table>
-    <h3 style="color:#fff;font-family:sans-serif;margin-top:24px;">Descriere proiect</h3>
-    <p style="color:#eee;line-height:1.6;white-space:pre-wrap;">${body.description ?? ""}</p>
+    <div style="margin:0;padding:24px;background:#F3F4F6;font-family:Arial,Helvetica,sans-serif;">
+      <div style="max-width:640px;margin:0 auto;background:#FFFFFF;border:1px solid #E5E7EB;border-radius:8px;overflow:hidden;">
+        <div style="padding:20px 24px;background:#0A0D13;border-bottom:3px solid #FF6A39;">
+          <p style="margin:0 0 6px;font-family:Consolas,Monaco,monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#FF6A39;">INCODECRAFT</p>
+          <h1 style="margin:0;font-size:22px;line-height:1.3;font-weight:700;color:#FFFFFF;">Cerere nouă de proiect</h1>
+        </div>
+        <div style="padding:24px;">
+          <table style="width:100%;border-collapse:collapse;">${details}</table>
+          <h2 style="margin:28px 0 12px;font-size:14px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#374151;">Descriere proiect</h2>
+          <div style="padding:16px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:6px;color:#111827;font-size:15px;line-height:1.65;white-space:pre-wrap;">${description}</div>
+        </div>
+      </div>
+    </div>
   `;
 }
 
