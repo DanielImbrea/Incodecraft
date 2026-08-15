@@ -1,4 +1,5 @@
 import { extraBlogPosts } from "./blog-extra";
+import { blogPosts2024 } from "./blog-2024";
 
 export type BlogPost = {
   slug: string;
@@ -354,6 +355,7 @@ blogPosts.push({
 });
 
 blogPosts.push(...extraBlogPosts);
+blogPosts.push(...blogPosts2024);
 
 export function getPostBySlug(slug: string) {
   return blogPosts.find((p) => p.slug === slug);
