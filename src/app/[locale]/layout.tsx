@@ -117,8 +117,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
-      <body>
+      <head>
         <GoogleAnalytics />
+      </head>
+      <body>
         <NextIntlClientProvider messages={messages}>
           <JsonLd data={organizationJsonLd} />
           <JsonLd data={websiteJsonLd} />
