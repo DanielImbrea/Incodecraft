@@ -1,17 +1,14 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-
-type ContactPayload = {
-  name?: string;
-  email?: string;
-  company?: string;
-  phone?: string;
-  projectType?: string;
-  budget?: string;
-  timeline?: string;
-  heardFrom?: string;
-  description?: string;
-};
+import {
+  checkContactRateLimit,
+  getClientIp,
+  isHoneypotTriggered,
+  isSuspiciousEmail,
+  sanitizeContactPayload,
+  verifyTurnstile,
+  type ContactPayload,
+} from "@/lib/contact-guard";
 
 function formatEmailHtml(body: ContactPayload) {
   const rows = [
@@ -41,10 +38,32 @@ function formatEmailHtml(body: ContactPayload) {
   `;
 }
 
+function spamAccepted() {
+  // Silently accept so automated senders do not adapt.
+  return NextResponse.json({ success: true });
+}
+
 export async function POST(request: Request) {
   try {
     const body = (await request.json()) as ContactPayload;
-    const { name, email, description } = body;
+    const ip = getClientIp(request);
+
+    if (isHoneypotTriggered(body) || (body.email && isSuspiciousEmail(body.email))) {
+      return spamAccepted();
+    }
+
+    const rate = await checkContactRateLimit(ip);
+    if (!rate.allowed) {
+      return NextResponse.json({ error: "Too many requests. Please try again later." }, { status: 429 });
+    }
+
+    const turnstileOk = await verifyTurnstile(body.turnstileToken, ip);
+    if (!turnstileOk) {
+      return NextResponse.json({ error: "Verification failed. Please try again." }, { status: 400 });
+    }
+
+    const payload = sanitizeContactPayload(body);
+    const { name, email, description } = payload;
 
     if (!name || !email || !description) {
       return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
@@ -61,7 +80,7 @@ export async function POST(request: Request) {
         to: [to],
         replyTo: email,
         subject: `[INCODECRAFT] Cerere proiect — ${name}`,
-        html: formatEmailHtml(body),
+        html: formatEmailHtml(payload),
       });
 
       if (error) {
@@ -75,13 +94,13 @@ export async function POST(request: Request) {
         const res = await fetch(endpoint, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
+          body: JSON.stringify(payload),
         });
         if (!res.ok) {
           return NextResponse.json({ error: "Failed to forward submission." }, { status: 502 });
         }
       } else {
-        console.log("Contact form submission (no email provider configured):", body);
+        console.log("Contact form submission (no email provider configured):", payload);
       }
     }
 
