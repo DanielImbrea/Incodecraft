@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/Reveal";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Cta } from "@/components/Cta";
+import { getSite } from "@/data";
 import { buildMetadata } from "@/lib/metadata";
 import type { Locale } from "@/i18n/routing";
 
@@ -23,6 +24,7 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
   const t = await getTranslations({ locale, namespace: "about" });
   const tc = await getTranslations({ locale, namespace: "common" });
   const principles = t.raw("principles") as { title: string; text: string }[];
+  const site = getSite(locale);
 
   return (
     <>
@@ -62,6 +64,21 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
                 sizes="(max-width: 768px) 100vw, 40vw"
                 priority
               />
+              <a
+                href={site.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="absolute right-3 top-3 z-10 transition-opacity hover:opacity-90 md:right-4 md:top-4"
+              >
+                <Image
+                  src="/logos/linkedin-logo-300x300.png"
+                  alt=""
+                  width={56}
+                  height={56}
+                  className="h-12 w-12 rounded-sm shadow-lg md:h-14 md:w-14"
+                />
+              </a>
             </div>
           </Reveal>
         </div>
