@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { ArrowUpRight } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -52,13 +53,15 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
           </div>
 
           <Reveal delay={0.1}>
-            <div className="card flex aspect-[4/5] items-center justify-center bg-surface-raised/40">
-              <div className="text-center">
-                <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border border-dashed border-ink-600 font-mono text-xs text-ink-500">
-                  {t("photo")}
-                </div>
-                <p className="font-mono text-xs uppercase tracking-wide text-ink-500">{t("photoPlaceholder")}</p>
-              </div>
+            <div className="card relative aspect-[4/5] overflow-hidden bg-surface-raised/40">
+              <Image
+                src="/about/about-workspace.jpg"
+                alt={t("photoAlt")}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 40vw"
+                priority
+              />
             </div>
           </Reveal>
         </div>
