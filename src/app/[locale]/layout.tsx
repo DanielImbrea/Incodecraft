@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { JsonLd } from "@/components/JsonLd";
 import { getSite } from "@/data";
 import { routing, type Locale } from "@/i18n/routing";
@@ -117,6 +118,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
       <body>
+        <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>
           <JsonLd data={organizationJsonLd} />
           <JsonLd data={websiteJsonLd} />
