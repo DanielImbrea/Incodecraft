@@ -77,7 +77,7 @@ export const privacyContent: Record<Locale, LegalPage> = {
       },
       {
         title: "3. Analytics",
-        body: "Folosim Google Analytics 4 pentru a înțelege cum este folosit site-ul (pagini vizitate, surse de trafic, comportament agregat). GA4 poate seta cookie-uri și procesează date tehnice despre dispozitivul și browserul tău. Google acționează ca operator de date în acest context; vezi politica de confidențialitate Google pentru detalii.",
+        body: "Folosim Google Analytics 4 pentru a înțelege cum este folosit site-ul (pagini vizitate, surse de trafic, comportament agregat). GA4 setează cookie-uri și procesează date tehnice despre dispozitivul și browserul tău. Analytics se activează doar dacă accepți cookie-urile din banner; poți schimba alegerea oricând din linkul „Setări cookie” din footer. Google acționează ca operator de date în acest context.",
       },
       {
         title: "4. Păstrarea datelor",
@@ -107,7 +107,7 @@ export const privacyContent: Record<Locale, LegalPage> = {
       },
       {
         title: "3. Analytics",
-        body: "We use Google Analytics 4 to understand how the site is used (pages visited, traffic sources, aggregate behavior). GA4 may set cookies and process technical data about your device and browser. Google acts as a data processor in this context; see Google's privacy policy for details.",
+        body: "We use Google Analytics 4 to understand how the site is used (pages visited, traffic sources, aggregate behavior). GA4 sets cookies and processes technical data about your device and browser. Analytics only runs if you accept cookies in the banner; you can change your choice anytime via the “Cookie settings” link in the footer. Google acts as a data processor in this context.",
       },
       {
         title: "4. Data retention",

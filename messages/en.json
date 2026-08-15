@@ -27,6 +27,16 @@
     "studio": "Studio",
     "copyright": "All rights reserved."
   },
+  "cookieConsent": {
+    "eyebrow": "Privacy",
+    "title": "We use analytics cookies",
+    "description": "We use Google Analytics to understand how the site is used — pages visited, traffic sources, aggregate behavior. You can accept or refuse; your choice is saved locally in your browser. Details in our",
+    "privacyLink": "privacy policy",
+    "terminal": "analytics: optional · refusal is just as easy",
+    "accept": "Accept",
+    "reject": "Decline",
+    "settingsLink": "Cookie settings"
+  },
   "footer": {
     "tagline": "Independent, developer-led digital studio, active since 2023. Design and development under one roof, from idea to launch.",
     "terminal": "status: available for projects"

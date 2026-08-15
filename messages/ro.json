@@ -27,6 +27,16 @@
     "studio": "Studio",
     "copyright": "Toate drepturile rezervate."
   },
+  "cookieConsent": {
+    "eyebrow": "Confidențialitate",
+    "title": "Folosim cookie-uri de analytics",
+    "description": "Folosim Google Analytics pentru a înțelege cum este folosit site-ul — pagini vizitate, surse de trafic, comportament agregat. Poți accepta sau refuza; alegerea se salvează local în browser. Detalii în",
+    "privacyLink": "politica de confidențialitate",
+    "terminal": "analytics: opțional · refuzul e la fel de ușor",
+    "accept": "Accept",
+    "reject": "Refuz",
+    "settingsLink": "Setări cookie"
+  },
   "footer": {
     "tagline": "Studio digital independent, condus de developer, activ din 2023. Design și dezvoltare sub același acoperiș, de la idee la lansare.",
     "terminal": "status: disponibil pentru proiecte"

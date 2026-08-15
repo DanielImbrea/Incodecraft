@@ -4,6 +4,7 @@ import { getSite } from "@/data";
 import type { Locale } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { BrandLogo } from "@/components/BrandLogo";
+import { CookieSettingsLink } from "@/components/CookieSettingsLink";
 import { TerminalLine } from "@/components/SignalAccent";
 
 export async function Footer({ locale }: { locale: Locale }) {
@@ -47,12 +48,13 @@ export async function Footer({ locale }: { locale: Locale }) {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-surface-border pt-8 text-xs text-ink-500 md:flex-row md:items-center">
           <p>© 2023–{new Date().getFullYear()} INCODECRAFT. {t("copyright")}</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
             {site.footerLinks.legal.map((l) => (
               <Link key={l.href} href={l.href} className="hover:text-ink-200">
                 {l.label}
               </Link>
             ))}
+            <CookieSettingsLink />
           </div>
         </div>
       </div>

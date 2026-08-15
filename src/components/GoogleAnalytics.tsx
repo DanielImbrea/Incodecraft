@@ -1,24 +1,18 @@
+"use client";
+
+import { useEffect } from "react";
 import { getGaMeasurementId } from "@/lib/analytics";
+import { loadGoogleAnalytics } from "@/lib/load-google-analytics";
 
-export function GoogleAnalytics() {
-  const gaId = getGaMeasurementId();
-  if (!gaId) return null;
+export function GoogleAnalytics({ enabled }: { enabled: boolean }) {
+  useEffect(() => {
+    const gaId = getGaMeasurementId();
+    if (!gaId) return;
 
-  return (
-    <>
-      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
-      <script
-        id="google-analytics"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gaId}');
-          `,
-        }}
-      />
-    </>
-  );
+    window[`ga-disable-${gaId}` as `ga-disable-${string}`] = !enabled;
+
+    if (enabled) loadGoogleAnalytics();
+  }, [enabled]);
+
+  return null;
 }

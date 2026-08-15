@@ -5,8 +5,8 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { Navbar } from "@/components/Navbar";
+import { CookieConsent } from "@/components/CookieConsent";
 import { Footer } from "@/components/Footer";
-import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { JsonLd } from "@/components/JsonLd";
 import { getSite } from "@/data";
 import { routing, type Locale } from "@/i18n/routing";
@@ -117,9 +117,6 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
-      <head>
-        <GoogleAnalytics />
-      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           <JsonLd data={organizationJsonLd} />
@@ -133,6 +130,7 @@ export default async function LocaleLayout({
           <Navbar locale={locale} />
           <main id="main-content">{children}</main>
           <Footer locale={locale} />
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>
