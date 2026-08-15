@@ -12,7 +12,7 @@ export const homeFaqs = [
   {
     question: "Lucrați cu afaceri din afara României?",
     answer:
-      "Da. INCODECRAFT are sediul în Iași, România, și lucrează cu clienți din România, Moldova și internațional, cu colaborare complet remote.",
+      "Da. INCODECRAFT are sediul în România și lucrează cu clienți din țară și internațional, cu colaborare complet remote.",
   },
   {
     question: "Cum începe de obicei un proiect?",

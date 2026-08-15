@@ -11,7 +11,7 @@ export const extraBlogPosts: BlogPost[] = [
     date: "2024-05-14",
     readingTime: "7 min citire",
     contentHtml: `
-      <p>Pentru o clinică din Iași, un atelier din Chișinău sau o firmă de servicii din București, vizibilitatea locală în Google este adesea sursa principală de clienți noi. SEO local nu înseamnă să „păcălești” algoritmul — înseamnă să fii clar, consistent și util acolo unde oamenii te caută deja.</p>
+      <p>Pentru o clinică din Cluj, un atelier din Timișoara sau o firmă de servicii din București, vizibilitatea locală în Google este adesea sursa principală de clienți noi. SEO local nu înseamnă să „păcălești” algoritmul — înseamnă să fii clar, consistent și util acolo unde oamenii te caută deja.</p>
       <h2>Ce contează cel mai mult</h2>
       <ul>
         <li><strong>Profil Google Business</strong> — complet, actualizat, cu categorie corectă, program și fotografii reale</li>

@@ -11,7 +11,7 @@ export const extraBlogPosts: BlogPost[] = [
     date: "2024-05-14",
     readingTime: "7 min read",
     contentHtml: `
-      <p>For a clinic in Iași, a workshop in Chișinău, or a services firm in Bucharest, local visibility in Google is often the main source of new clients. Local SEO does not mean gaming the algorithm — it means being clear, consistent, and useful where people already search for you.</p>
+      <p>For a clinic in Cluj, a workshop in Timișoara, or a services firm in Bucharest, local visibility in Google is often the main source of new clients. Local SEO does not mean gaming the algorithm — it means being clear, consistent, and useful where people already search for you.</p>
       <h2>What matters most</h2>
       <ul>
         <li><strong>Google Business Profile</strong> — complete, up to date, correct category, hours, and real photos</li>
@@ -44,7 +44,7 @@ export const extraBlogPosts: BlogPost[] = [
     slug: "why-your-business-needs-a-professional-website",
     title: "Why your business needs a professional website",
     excerpt:
-      "A social profile does not replace a website you own. Here is what actually matters for small and mid-size businesses in Romania and Moldova.",
+      "A social profile does not replace a website you own. Here is what actually matters for small and mid-size businesses in Romania.",
     category: "Web development",
     author: "INCODECRAFT",
     date: "2024-09-22",

@@ -186,7 +186,7 @@ export const blogPosts2024: BlogPost[] = [
         <li><strong>Contact ușor</strong> — formular, telefon, program — fără labirint</li>
       </ul>
       <h2>Cuvinte cheie care contează</h2>
-      <p>Combină serviciul cu intenția: „dezvoltare web Iași”, „site prezentare firmă construcții”, „CRM custom clinică”. Long-tail-ul (fraze mai lungi, mai specifice) aduce trafic mai mic dar conversie mai mare decât termeni generici ultra-competitivi.</p>
+      <p>Combină serviciul cu intenția: „dezvoltare web România”, „site prezentare firmă construcții”, „CRM custom clinică”. Long-tail-ul (fraze mai lungi, mai specifice) aduce trafic mai mic dar conversie mai mare decât termeni generici ultra-competitivi.</p>
       <h2>Conținut care aduce clienți</h2>
       <ul>
         <li>Articole care răspund la întrebări reale (preț orientativ, timeline, comparații)</li>

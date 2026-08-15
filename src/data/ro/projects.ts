@@ -214,7 +214,7 @@ export const projects: Project[] = [
     summary:
       "Sisteme CRM offline pentru registraturi de primărie — dosare cetățeni, cereri documente și sync automat când revine internetul.",
     description:
-      "Tool de registratură cu funcționare offline pentru secretariate de primărie și birouri municipale din România și Moldova — acolo unde conexiunea nu poate fi luată ca garantată.",
+      "Tool de registratură cu funcționare offline pentru secretariate de primărie și birouri municipale din România — acolo unde conexiunea nu poate fi luată ca garantată.",
     year: "2024–2025",
     technology: ["Next.js", "TypeScript", "PostgreSQL", "PWA", "IndexedDB", "Service Workers"],
     featured: true,

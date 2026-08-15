@@ -214,7 +214,7 @@ export const projects: Project[] = [
     summary:
       "Offline CRM systems for municipal registry offices — citizen files, document requests and automatic sync when connectivity returns.",
     description:
-      "An offline-capable registry tool for town hall secretary offices and municipal desks in Romania and Moldova — where a stable connection cannot be taken for granted.",
+      "An offline-capable registry tool for town hall secretary offices and municipal desks in Romania — where a stable connection cannot be taken for granted.",
     year: "2024–2025",
     technology: ["Next.js", "TypeScript", "PostgreSQL", "PWA", "IndexedDB", "Service Workers"],
     featured: true,

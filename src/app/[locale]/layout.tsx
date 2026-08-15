@@ -37,7 +37,7 @@ export async function generateMetadata({
       "dezvoltare web România",
       "e-commerce development Romania",
       "web application development Romania",
-      "custom web development Iași",
+      "custom web development Romania",
       "AI development studio",
     ],
     authors: [{ name: site.name }],
@@ -100,11 +100,9 @@ export default async function LocaleLayout({
     description: site.description,
     address: {
       "@type": "PostalAddress",
-      addressLocality: site.location.city,
-      addressRegion: site.location.region,
       addressCountry: "RO",
     },
-    areaServed: ["RO", "MD"],
+    areaServed: ["RO"],
     sameAs: [site.social.linkedin],
   };
 

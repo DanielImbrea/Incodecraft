@@ -48,7 +48,7 @@ export default async function ContactPage({ params: { locale } }: { params: { lo
                 </div>
                 <div>
                   <p className="text-ink-500">{tc("basedIn")}</p>
-                  <p className="text-ink-100">{site.location.city}, {site.location.country}</p>
+                  <p className="text-ink-100">{site.location.country}</p>
                 </div>
                 <div>
                   <p className="text-ink-500">{tc("workingWith")}</p>

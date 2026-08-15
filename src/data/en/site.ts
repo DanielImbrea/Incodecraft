@@ -8,10 +8,9 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.incodecraft.com",
   email: "hello@incodecraft.com",
   location: {
-    city: "Iași",
-    region: "Iași County",
     country: "Romania",
-    serves: "Romania, Moldova, and international clients",
+    footerLine: "Romania-based studio · National and international clients",
+    serves: "Businesses in Romania and international clients",
   },
   social: {
     github: "https://github.com/incodecraft",

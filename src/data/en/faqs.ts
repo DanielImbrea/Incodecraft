@@ -12,7 +12,7 @@ export const homeFaqs = [
   {
     question: "Do you work with businesses outside Romania?",
     answer:
-      "Yes. INCODECRAFT is based in Iași, Romania and works with clients across Romania, Moldova, and internationally, with all collaboration happening remotely.",
+      "Yes. INCODECRAFT is based in Romania and works with clients nationally and internationally, with all collaboration happening remotely.",
   },
   {
     question: "How does a project usually start?",

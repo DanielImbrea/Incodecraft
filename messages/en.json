@@ -69,10 +69,36 @@
     "errorDirect": "directly.",
     "rateLimitMessage": "Too many attempts. Please try again in about an hour.",
     "verificationMessage": "Security verification failed. Reload the page and try again.",
-    "projectTypes": ["Website", "E-commerce", "Web Application", "SaaS", "AI Application", "Custom Software", "Other"],
-    "budgets": ["€350–€1,000", "€1,000–€3,000", "€3,000–€5,000", "€5,000–€10,000", "€10,000+"],
-    "timelines": ["As soon as possible", "Within 1 month", "1–3 months", "3+ months", "Not sure yet"],
-    "heardFromOptions": ["Search engine", "Referral", "Social media", "GitHub", "Other"]
+    "projectTypes": [
+      "Website",
+      "E-commerce",
+      "Web Application",
+      "SaaS",
+      "AI Application",
+      "Custom Software",
+      "Other"
+    ],
+    "budgets": [
+      "€350–€1,000",
+      "€1,000–€3,000",
+      "€3,000–€5,000",
+      "€5,000–€10,000",
+      "€10,000+"
+    ],
+    "timelines": [
+      "As soon as possible",
+      "Within 1 month",
+      "1–3 months",
+      "3+ months",
+      "Not sure yet"
+    ],
+    "heardFromOptions": [
+      "Search engine",
+      "Referral",
+      "Social media",
+      "GitHub",
+      "Other"
+    ]
   },
   "notFound": {
     "eyebrow": "Error 404",
@@ -89,7 +115,7 @@
     "eyebrow": "Independent digital studio",
     "heroSlides": [
       {
-        "title": "We build digital products\nthat move businesses forward.",
+        "title": "We build digital products that move\nbusinesses forward.",
         "subtitle": "Modern websites, e-commerce platforms and custom web applications, designed and developed for businesses that want more from the web than a template."
       },
       {
@@ -126,15 +152,31 @@
     "faqTitle": "Questions worth answering upfront.",
     "faqTerminal": "clear answers from the start",
     "processSteps": [
-      { "n": "01", "title": "Discovery", "desc": "Understanding your business, goals and constraints before any design work starts." },
-      { "n": "02", "title": "Strategy", "desc": "Defining scope, architecture and success criteria in writing, so nothing is ambiguous." },
-      { "n": "03", "title": "Design & Build", "desc": "Design and development happen under one roof, iterated together rather than handed off in stages." },
-      { "n": "04", "title": "Launch & Grow", "desc": "Testing, launch, and a clear path for ongoing improvements once the product is live." }
+      {
+        "n": "01",
+        "title": "Discovery",
+        "desc": "Understanding your business, goals and constraints before any design work starts."
+      },
+      {
+        "n": "02",
+        "title": "Strategy",
+        "desc": "Defining scope, architecture and success criteria in writing, so nothing is ambiguous."
+      },
+      {
+        "n": "03",
+        "title": "Design & Build",
+        "desc": "Design and development happen under one roof, iterated together rather than handed off in stages."
+      },
+      {
+        "n": "04",
+        "title": "Launch & Grow",
+        "desc": "Testing, launch, and a clear path for ongoing improvements once the product is live."
+      }
     ]
   },
   "about": {
     "metaTitle": "About — Independent, Developer-Led Digital Studio",
-    "metaDescription": "INCODECRAFT is an independent, developer-led digital studio based in Iași, Romania, building modern websites, applications and e-commerce platforms with direct collaboration from idea to launch.",
+    "metaDescription": "INCODECRAFT is an independent, developer-led digital studio based in Romania, building modern websites, applications and e-commerce platforms with direct collaboration from idea to launch.",
     "breadcrumb": "About",
     "eyebrow": "About INCODECRAFT",
     "title": "An independent digital studio, led directly by the person building your product.",
@@ -145,15 +187,30 @@
     "photoPlaceholder": "Portrait placeholder",
     "principlesEyebrow": "How the studio operates",
     "principlesTitle": "The principles behind every project.",
-    "locationEyebrow": "Based in Iași, working broadly",
-    "locationTitle": "Based in Iași, Romania — working with businesses across Romania, Moldova, and internationally.",
+    "locationEyebrow": "Based in Romania, working globally",
+    "locationTitle": "Romania-based studio — working with national and international businesses.",
     "locationText": "All collaboration happens remotely by default, with clear written scope and regular updates — so distance is never an obstacle to a project moving forward on schedule.",
     "principles": [
-      { "title": "Direct collaboration", "text": "You work with the person actually writing the code and making the technical decisions, from the first conversation to launch." },
-      { "title": "Design and development, together", "text": "Interface decisions and engineering decisions are made by the same person, in the same sitting — not handed off between departments." },
-      { "title": "Technical ownership", "text": "Every project is built on architecture chosen for that specific product, not a one-size-fits-all internal template." },
-      { "title": "Attention to detail", "text": "Spacing, performance, accessibility and SEO are treated as part of the build, not a final pass before launch." },
-      { "title": "Long-term thinking", "text": "Code is written to be extended later, by whoever maintains it — including future you." }
+      {
+        "title": "Direct collaboration",
+        "text": "You work with the person actually writing the code and making the technical decisions, from the first conversation to launch."
+      },
+      {
+        "title": "Design and development, together",
+        "text": "Interface decisions and engineering decisions are made by the same person, in the same sitting — not handed off between departments."
+      },
+      {
+        "title": "Technical ownership",
+        "text": "Every project is built on architecture chosen for that specific product, not a one-size-fits-all internal template."
+      },
+      {
+        "title": "Attention to detail",
+        "text": "Spacing, performance, accessibility and SEO are treated as part of the build, not a final pass before launch."
+      },
+      {
+        "title": "Long-term thinking",
+        "text": "Code is written to be extended later, by whoever maintains it — including future you."
+      }
     ]
   },
   "process": {
@@ -165,14 +222,46 @@
     "subtitle": "Every project follows the same eight stages. The names stay the same regardless of scope — what changes is how much time each stage takes.",
     "terminal": "from idea to launch",
     "stages": [
-      { "n": "01", "title": "Discovery", "desc": "A conversation about your business, your goals for the project, and the constraints that matter — budget, timeline, existing systems. This stage exists to make sure the right project gets built, not just any project." },
-      { "n": "02", "title": "Strategy", "desc": "Scope, architecture and success criteria get defined in writing. You'll know what's included, what isn't, and roughly how long it will take before any development starts." },
-      { "n": "03", "title": "UX / Structure", "desc": "Information architecture and user flows are mapped out — how pages connect, what a user does at each step, and where the important decisions happen." },
-      { "n": "04", "title": "Design", "desc": "A visual design system is built around your brand: typography, color, spacing and components — not a generic template adjusted to fit." },
-      { "n": "05", "title": "Development", "desc": "Design and code come together. Because the same person handles both, design decisions get refined against real, working code rather than static mockups." },
-      { "n": "06", "title": "Testing", "desc": "Functionality, responsiveness, accessibility and performance are checked across real devices and browsers before anything goes live." },
-      { "n": "07", "title": "Launch", "desc": "The project goes live with proper monitoring, analytics and search console setup in place from day one." },
-      { "n": "08", "title": "Continuous improvement", "desc": "Most good products keep evolving after launch. Ongoing maintenance, new features and performance work are available as an extension of the same relationship." }
+      {
+        "n": "01",
+        "title": "Discovery",
+        "desc": "A conversation about your business, your goals for the project, and the constraints that matter — budget, timeline, existing systems. This stage exists to make sure the right project gets built, not just any project."
+      },
+      {
+        "n": "02",
+        "title": "Strategy",
+        "desc": "Scope, architecture and success criteria get defined in writing. You'll know what's included, what isn't, and roughly how long it will take before any development starts."
+      },
+      {
+        "n": "03",
+        "title": "UX / Structure",
+        "desc": "Information architecture and user flows are mapped out — how pages connect, what a user does at each step, and where the important decisions happen."
+      },
+      {
+        "n": "04",
+        "title": "Design",
+        "desc": "A visual design system is built around your brand: typography, color, spacing and components — not a generic template adjusted to fit."
+      },
+      {
+        "n": "05",
+        "title": "Development",
+        "desc": "Design and code come together. Because the same person handles both, design decisions get refined against real, working code rather than static mockups."
+      },
+      {
+        "n": "06",
+        "title": "Testing",
+        "desc": "Functionality, responsiveness, accessibility and performance are checked across real devices and browsers before anything goes live."
+      },
+      {
+        "n": "07",
+        "title": "Launch",
+        "desc": "The project goes live with proper monitoring, analytics and search console setup in place from day one."
+      },
+      {
+        "n": "08",
+        "title": "Continuous improvement",
+        "desc": "Most good products keep evolving after launch. Ongoing maintenance, new features and performance work are available as an extension of the same relationship."
+      }
     ]
   },
   "work": {

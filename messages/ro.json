@@ -134,7 +134,7 @@
   },
   "about": {
     "metaTitle": "Despre — Studio Digital Independent, Condus de Developer",
-    "metaDescription": "INCODECRAFT este un studio digital independent, condus de developer, cu sediul în Iași, România, care construiește website-uri moderne, aplicații și platforme e-commerce cu colaborare directă de la idee la lansare.",
+    "metaDescription": "INCODECRAFT este un studio digital independent, condus de developer, cu sediul în România, care construiește website-uri moderne, aplicații și platforme e-commerce cu colaborare directă de la idee la lansare.",
     "breadcrumb": "Despre",
     "eyebrow": "Despre INCODECRAFT",
     "title": "Un studio digital independent, condus direct de persoana care construiește produsul tău.",
@@ -145,8 +145,8 @@
     "photoPlaceholder": "Placeholder portret",
     "principlesEyebrow": "Cum operează studio-ul",
     "principlesTitle": "Principiile din spatele fiecărui proiect.",
-    "locationEyebrow": "Cu sediul în Iași, lucrăm global",
-    "locationTitle": "Cu sediul în Iași, România — lucrăm cu afaceri din România, Moldova și internațional.",
+    "locationEyebrow": "Din România, lucrăm global",
+    "locationTitle": "Studio din România — colaborăm cu afaceri naționale și internaționale.",
     "locationText": "Toată colaborarea se întâmplă remote by default, cu proiect definit clar în scris și update-uri regulate — astfel distanța nu e niciodată un obstacol pentru un proiect care avansează la timp.",
     "principles": [
       { "title": "Colaborare directă", "text": "Lucrezi cu persoana care scrie de fapt codul și ia deciziile tehnice, de la prima conversație la lansare." },

@@ -186,7 +186,7 @@ export const blogPosts2024: BlogPost[] = [
         <li><strong>Easy contact</strong> — form, phone, schedule — no maze</li>
       </ul>
       <h2>Keywords that matter</h2>
-      <p>Combine service with intent: "web development Iași", "presentation website construction company", "custom CRM clinic". Long-tail phrases bring less traffic but higher conversion than ultra-competitive generic terms.</p>
+      <p>Combine service with intent: "web development Romania", "presentation website construction company", "custom CRM clinic". Long-tail phrases bring less traffic but higher conversion than ultra-competitive generic terms.</p>
       <h2>Content that brings clients</h2>
       <ul>
         <li>Articles answering real questions (indicative pricing, timeline, comparisons)</li>

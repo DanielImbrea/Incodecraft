@@ -78,7 +78,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Ce influențează costul</h2>
       <ul>
         <li><strong>Dimensiunea și structura catalogului</strong> — numărul de produse, variante și categorii</li>
-        <li><strong>Configurarea plăților</strong> — Stripe și metode de plată locale relevante pentru clienții din România și Moldova</li>
+        <li><strong>Configurarea plăților</strong> — Stripe și metode de plată locale relevante pentru clienții din România</li>
         <li><strong>Logica de livrare</strong> — tarife fixe, integrări cu curieri sau reguli mai complexe</li>
         <li><strong>Instrumente admin</strong> — cât de mult trebuie echipa ta să gestioneze fără implicarea unui developer</li>
         <li><strong>Design</strong> — o temă templated versus un storefront complet custom</li>

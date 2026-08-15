@@ -80,7 +80,7 @@ export const services: Service[] = [
     shortName: "E-commerce",
     tagline: "Online stores built to sell — not just to look good.",
     summary:
-      "Custom online stores and platform-based builds (Shopify, WooCommerce) covering catalog, checkout, shipping and admin tooling, built with Romanian and Moldovan e-commerce needs in mind.",
+      "Custom online stores built from scratch — catalog, checkout, shipping, payments and admin tooling. No monthly platform subscription: you own the store and the code.",
     whoFor: [
       "Businesses launching a new online store",
       "Retailers outgrowing a restrictive template storefront",
@@ -88,7 +88,7 @@ export const services: Service[] = [
     ],
     whatIBuild: [
       "Custom-built online stores",
-      "WooCommerce and Shopify implementations",
+      "Custom e-commerce platforms — no monthly platform fees, no vendor lock-in",
       "Product catalog and inventory systems",
       "Stripe and local payment integrations",
       "Shipping and fulfilment integrations",
@@ -109,7 +109,7 @@ export const services: Service[] = [
   },
   {
     slug: "ai-development",
-    name: "AI-Powered Applications",
+    name: "AI integrations & products",
     shortName: "AI",
     tagline: "Practical AI features that solve a real problem in your product.",
     summary:

@@ -78,7 +78,7 @@ export const blogPosts: BlogPost[] = [
       <h2>What drives the cost</h2>
       <ul>
         <li><strong>Catalog size and structure</strong> — number of products, variants and categories</li>
-        <li><strong>Payment setup</strong> — Stripe and local payment methods relevant to Romanian and Moldovan customers</li>
+        <li><strong>Payment setup</strong> — Stripe and local payment methods relevant to Romanian customers</li>
         <li><strong>Shipping logic</strong> — flat rates, carrier integrations, or more complex rules</li>
         <li><strong>Admin tooling</strong> — how much your team needs to manage without developer involvement</li>
         <li><strong>Design</strong> — a templated theme versus a fully custom storefront</li>

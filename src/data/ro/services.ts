@@ -80,7 +80,7 @@ export const services: Service[] = [
     shortName: "E-commerce",
     tagline: "Magazine online construite să vândă — nu doar să arate bine.",
     summary:
-      "Magazine online custom și implementări pe platformă (Shopify, WooCommerce) acoperind catalog, checkout, livrare și tool-uri admin, gândite pentru nevoile e-commerce din România și Moldova.",
+      "Magazine online custom, construite de la zero — catalog, checkout, livrări, plăți și panou admin. Fără abonament lunar la platformă: codul și magazinul sunt ale tale.",
     whoFor: [
       "Afaceri care lansează un magazin online nou",
       "Retaileri care depășesc un storefront restrictiv bazat pe template",
@@ -88,7 +88,7 @@ export const services: Service[] = [
     ],
     whatIBuild: [
       "Magazine online construite custom",
-      "Implementări WooCommerce și Shopify",
+      "Platforme e-commerce custom — fără taxe lunare de platformă, fără lock-in",
       "Sisteme de catalog produse și inventar",
       "Integrări plăți Stripe și locale",
       "Integrări livrare și fulfilment",
@@ -109,7 +109,7 @@ export const services: Service[] = [
   },
   {
     slug: "ai-development",
-    name: "Aplicații cu AI",
+    name: "Integrări și produse AI",
     shortName: "AI",
     tagline: "Funcționalități AI practice care rezolvă o problemă reală în produsul tău.",
     summary:

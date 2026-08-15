@@ -54,7 +54,7 @@ export default async function ServiceDetailPage({
     "@type": "Service",
     serviceType: service.name,
     provider: { "@type": "ProfessionalService", name: site.name, url: site.url },
-    areaServed: ["RO", "MD"],
+    areaServed: ["RO"],
     description: service.summary,
   };
 

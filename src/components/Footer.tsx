@@ -22,7 +22,7 @@ export async function Footer({ locale }: { locale: Locale }) {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-400">{tf("tagline")}</p>
             <TerminalLine className="mt-5">{tf("terminal")}</TerminalLine>
             <p className="mt-6 font-mono text-xs text-ink-500">
-              {site.location.city}, {site.location.country} — {site.location.serves}
+              {site.location.footerLine}
             </p>
           </div>
 
