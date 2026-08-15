@@ -1,8 +1,9 @@
 import { Link } from "@/i18n/routing";
-import { Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
+import { Linkedin, ArrowUpRight } from "lucide-react";
 import { getSite } from "@/data";
 import type { Locale } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import { BrandLogo } from "@/components/BrandLogo";
 import { TerminalLine } from "@/components/SignalAccent";
 
 export async function Footer({ locale }: { locale: Locale }) {
@@ -15,11 +16,8 @@ export async function Footer({ locale }: { locale: Locale }) {
       <div className="container-xl py-16">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
           <div className="col-span-2">
-            <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold text-ink-50">
-              <span className="flex h-7 w-7 items-center justify-center rounded-xs border border-signal/40 bg-signal/10 font-mono text-xs text-signal">
-                {"</>"}
-              </span>
-              INCODECRAFT
+            <Link href="/">
+              <BrandLogo />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-400">{tf("tagline")}</p>
             <TerminalLine className="mt-5">{tf("terminal")}</TerminalLine>
@@ -37,14 +35,8 @@ export async function Footer({ locale }: { locale: Locale }) {
               {site.email}
             </a>
             <div className="mt-6 flex gap-4">
-              <a href={site.social.github} aria-label="GitHub" className="text-ink-400 hover:text-ink-50">
-                <Github size={18} />
-              </a>
               <a href={site.social.linkedin} aria-label="LinkedIn" className="text-ink-400 hover:text-ink-50">
                 <Linkedin size={18} />
-              </a>
-              <a href={site.social.x} aria-label="X" className="text-ink-400 hover:text-ink-50">
-                <Twitter size={18} />
               </a>
             </div>
             <Link href="/contact" className="btn-secondary mt-6 w-fit">

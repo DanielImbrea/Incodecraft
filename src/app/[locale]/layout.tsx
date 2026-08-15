@@ -57,8 +57,17 @@ export async function generateMetadata({
       description: site.description,
     },
     icons: {
-      icon: "/favicon.svg",
+      icon: [
+        { url: "/logos/favicon.ico", sizes: "any" },
+        { url: "/logos/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+        { url: "/logos/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/logos/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+        { url: "/logos/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+        { url: "/logos/incodecraft-icon-square.svg", type: "image/svg+xml" },
+      ],
+      apple: "/logos/apple-touch-icon-180x180.png",
     },
+    manifest: "/site.webmanifest",
     verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
       ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
       : undefined,
@@ -96,7 +105,7 @@ export default async function LocaleLayout({
       addressCountry: "RO",
     },
     areaServed: ["RO", "MD"],
-    sameAs: [site.social.github, site.social.linkedin, site.social.x],
+    sameAs: [site.social.linkedin],
   };
 
   const websiteJsonLd = {

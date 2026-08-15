@@ -1,3 +1,5 @@
+import { extraBlogPosts } from "./blog-extra";
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -350,6 +352,8 @@ blogPosts.push({
   ],
   relatedSlugs: ["how-much-does-an-ecommerce-website-cost", "how-to-improve-website-speed"],
 });
+
+blogPosts.push(...extraBlogPosts);
 
 export function getPostBySlug(slug: string) {
   return blogPosts.find((p) => p.slug === slug);

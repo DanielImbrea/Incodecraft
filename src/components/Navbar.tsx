@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { getSite } from "@/data";
 import type { Locale } from "@/i18n/routing";
+import { BrandLogo } from "@/components/BrandLogo";
 import { cn } from "@/lib/utils";
 
 export function Navbar({ locale }: { locale: Locale }) {
@@ -37,11 +38,8 @@ export function Navbar({ locale }: { locale: Locale }) {
       )}
     >
       <nav className="container-xl flex h-16 items-center justify-between md:h-20">
-        <Link href="/" className="group flex items-center gap-2 font-display text-lg font-semibold tracking-tight text-ink-50">
-          <span className="flex h-7 w-7 items-center justify-center rounded-xs border border-signal/40 bg-signal/10 font-mono text-xs text-signal">
-            {"</>"}
-          </span>
-          INCODECRAFT
+        <Link href="/" className="group">
+          <BrandLogo />
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
