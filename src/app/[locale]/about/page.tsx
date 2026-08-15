@@ -55,7 +55,7 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
           <Reveal delay={0.1}>
             <div className="card relative aspect-[4/5] overflow-hidden bg-surface-raised/40">
               <Image
-                src="/about/about-workspace.jpg"
+                src="/incodecraft-aboutme-image.png"
                 alt={t("photoAlt")}
                 fill
                 className="object-cover"
