@@ -1,5 +1,5 @@
 /** Bump when replacing public/og-image.png to bust Meta/WhatsApp link preview cache. */
-export const OG_IMAGE_VERSION = "3";
+export const OG_IMAGE_VERSION = "4";
 
 export function getOgImageUrl(siteUrl: string): string {
   return `${siteUrl}/og-image.png?v=${OG_IMAGE_VERSION}`;
