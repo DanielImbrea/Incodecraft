@@ -9,6 +9,7 @@ import { CookieConsent } from "@/components/CookieConsent";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { getSite } from "@/data";
+import { getOgImageMeta } from "@/lib/og-image";
 import { routing, type Locale } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -50,12 +51,13 @@ export async function generateMetadata({
       siteName: site.name,
       title: `${site.name} — Independent Digital Studio`,
       description: site.description,
-      images: [{ url: `${site.url}/og-image.png`, width: 1200, height: 630, alt: site.name }],
+      images: [getOgImageMeta(site.url, site.name)],
     },
     twitter: {
       card: "summary_large_image",
       title: `${site.name} — Independent Digital Studio`,
       description: site.description,
+      images: [getOgImageMeta(site.url, site.name).url],
     },
     icons: {
       icon: [

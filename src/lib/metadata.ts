@@ -1,6 +1,7 @@
 import type { Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 import { getSite } from "@/data";
+import { getOgImageMeta, getOgImageUrl } from "@/lib/og-image";
 
 type SeoOptions = {
   title: string;
@@ -23,7 +24,7 @@ export function buildMetadata({ title, description, path, locale, image, noIndex
   const site = getSite(locale);
   const canonicalPath = localizedPath(locale, path);
   const url = `${site.url}${canonicalPath === "/" ? "" : canonicalPath}`;
-  const ogImage = image || `${site.url}/og-image.png`;
+  const ogImage = image || getOgImageUrl(site.url);
   const ogLocale = locale === "ro" ? "ro_RO" : "en_US";
 
   const languages: Record<string, string> = {};
@@ -45,7 +46,7 @@ export function buildMetadata({ title, description, path, locale, image, noIndex
       description,
       url,
       siteName: site.name,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      images: [getOgImageMeta(site.url, title)],
       locale: ogLocale,
       type: "website" as const,
     },
