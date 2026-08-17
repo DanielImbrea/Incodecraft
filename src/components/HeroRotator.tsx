@@ -9,7 +9,6 @@ type HeroSlide = {
 };
 
 const INTERVAL_MS = 7000;
-const SLIDE_ENTER_DELAY_S = 1;
 
 const lineClass = (index: number, total: number) => {
   if (index === total - 1 && total > 1) {
@@ -50,20 +49,9 @@ export function HeroRotator({ slides }: { slides: HeroSlide[] }) {
         <motion.div
           key={active}
           initial={{ opacity: 0, y: 14 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.55,
-              delay: SLIDE_ENTER_DELAY_S,
-              ease: [0.22, 1, 0.36, 1],
-            },
-          }}
-          exit={{
-            opacity: 0,
-            y: -10,
-            transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
-          }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           className="w-full min-w-0"
         >
           <HeroTitle title={slide.title} />
