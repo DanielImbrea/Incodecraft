@@ -7,7 +7,7 @@ export const homeFaqs = [
   {
     question: "What kind of projects do you take on?",
     answer:
-      "Mainly modern websites, custom web applications, e-commerce platforms and AI-powered products. If a project needs custom engineering rather than a template, it's a good fit.",
+      "Mainly modern websites, custom web applications, mobile apps for iOS and Android, e-commerce platforms and AI-powered products. If a project needs custom engineering rather than a template, it's a good fit.",
   },
   {
     question: "Do you work with businesses outside Romania?",

@@ -83,6 +83,7 @@
       "Website",
       "E-commerce",
       "Web Application",
+      "Mobile App (iOS/Android)",
       "SaaS",
       "AI Application",
       "Custom Software",
@@ -121,19 +122,19 @@
     "switchTo": "Switch language"
   },
   "home": {
-    "metaTitle": "INCODECRAFT — Independent Digital Studio | Websites · Applications · E-commerce · AI",
+    "metaTitle": "INCODECRAFT — Independent Digital Studio | Websites · Web & Mobile Apps · E-commerce · AI",
     "eyebrow": "Independent digital studio",
     "heroSlides": [
       {
         "title": "We build digital products that move\nbusinesses forward.",
-        "subtitle": "Modern websites, e-commerce platforms and custom web applications, designed and developed for businesses that want more from the web than a template."
+        "subtitle": "Modern websites, e-commerce platforms, custom web applications and mobile apps for iOS and Android — designed and built for businesses that want more than a template."
       },
       {
         "title": "Have an idea but\nnot sure exactly\nwhat needs to be built?",
         "subtitle": "We can start with minimal brief. Throughout development we stay close at every step — evenings and weekends included — until we reach the outcome you want."
       }
     ],
-    "terminal": "building for Websites · Applications · E-commerce · AI",
+    "terminal": "building for Websites · Web & Mobile · E-commerce · AI",
     "directCollaboration": "Direct collaboration",
     "directCollaborationText": "From idea to launch, you work directly with the person building your product.",
     "customBuilt": "Custom-built",
@@ -186,11 +187,11 @@
   },
   "about": {
     "metaTitle": "About — Independent, Developer-Led Digital Studio",
-    "metaDescription": "INCODECRAFT is an independent, developer-led digital studio based in Romania, building modern websites, applications and e-commerce platforms with direct collaboration from idea to launch.",
+    "metaDescription": "INCODECRAFT is an independent, developer-led digital studio based in Romania, building modern websites, web and mobile applications and e-commerce platforms with direct collaboration from idea to launch.",
     "breadcrumb": "About",
     "eyebrow": "About INCODECRAFT",
     "title": "An independent digital studio, led directly by the person building your product.",
-    "p1": "INCODECRAFT is an independent, developer-led digital studio focused on building modern websites, custom web applications, e-commerce platforms and AI-powered digital products. Rather than routing a project through account managers, separate designers and separate developers, INCODECRAFT keeps strategy, design and engineering under one roof — which means fewer handoffs, less translation loss, and a shorter distance between an idea and a shipped product.",
+    "p1": "INCODECRAFT is an independent, developer-led digital studio focused on building modern websites, custom web applications, mobile apps for iOS and Android, e-commerce platforms and AI-powered digital products. Rather than routing a project through account managers, separate designers and separate developers, INCODECRAFT keeps strategy, design and engineering under one roof — which means fewer handoffs, less translation loss, and a shorter distance between an idea and a shipped product.",
     "p2": "This is not a large agency, and it doesn't pretend to be one. It's an independent studio built around direct collaboration, senior-level technical judgment, and ownership of the outcome — the kind of attention a project gets when the same person is responsible for the whole thing.",
     "photo": "Photo",
     "photoAlt": "Developer workspace — desk with monitors and keyboard",
@@ -276,7 +277,7 @@
   },
   "work": {
     "metaTitle": "Our Work — Websites, Applications & E-commerce Projects",
-    "metaDescription": "A selection of websites, web applications, e-commerce platforms and AI-powered products designed and built by INCODECRAFT.",
+    "metaDescription": "A selection of websites, web applications, mobile apps, e-commerce platforms and AI-powered products designed and built by INCODECRAFT.",
     "breadcrumb": "Work",
     "eyebrow": "Our work",
     "title": "Products built end to end, from architecture to interface.",
@@ -297,8 +298,8 @@
     "startSimilar": "Start a similar project"
   },
   "services": {
-    "metaTitle": "Services — Web Development, Applications, E-commerce & AI",
-    "metaDescription": "Website development, custom web applications, e-commerce platforms, AI-powered products, integrations and ongoing maintenance — built by an independent developer-led studio.",
+    "metaTitle": "Services — Web Development, Web & Mobile Apps, E-commerce & AI",
+    "metaDescription": "Website development, custom web applications, mobile apps for iOS and Android, e-commerce platforms, AI-powered products, integrations and ongoing maintenance — built by an independent developer-led studio.",
     "breadcrumb": "Services",
     "eyebrow": "Services",
     "title": "Custom digital products, built around your business.",

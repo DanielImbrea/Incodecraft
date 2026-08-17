@@ -39,6 +39,8 @@ export async function generateMetadata({
       "dezvoltare web România",
       "e-commerce development Romania",
       "web application development Romania",
+      "mobile app development Romania",
+      "iOS Android app development",
       "custom web development Romania",
       "AI development studio",
     ],

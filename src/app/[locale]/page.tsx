@@ -14,7 +14,7 @@ import type { Locale } from "@/i18n/routing";
 
 const capabilities = [
   "Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "PostgreSQL",
-  "Supabase", "Stripe", "OpenAI", "Vercel", "Cloudflare", "PWA",
+  "Supabase", "Stripe", "OpenAI", "React Native", "iOS & Android", "Vercel", "Cloudflare", "PWA",
   "REST & GraphQL APIs", "AI Integrations",
 ];
 

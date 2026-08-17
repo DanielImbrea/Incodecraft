@@ -7,7 +7,7 @@ export const homeFaqs = [
   {
     question: "Ce tip de proiecte preluați?",
     answer:
-      "În principal website-uri moderne, aplicații web personalizate, platforme e-commerce și produse cu AI. Dacă un proiect necesită inginerie custom, nu un template, e un fit bun.",
+      "În principal website-uri moderne, aplicații web, aplicații mobile pentru iOS și Android, platforme e-commerce și produse cu AI. Dacă un proiect necesită inginerie custom, nu un template, e un fit bun.",
   },
   {
     question: "Lucrați cu afaceri din afara României?",

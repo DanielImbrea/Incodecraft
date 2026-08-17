@@ -1,10 +1,10 @@
 export const site = {
   name: "INCODECRAFT",
   legalName: "INCODECRAFT",
-  descriptor: "Website-uri · Aplicații · E-commerce · AI",
+  descriptor: "Website-uri · Aplicații web & mobile · E-commerce · AI",
   tagline: "Produse digitale, create cu cod.",
   description:
-    "INCODECRAFT este un studio digital independent, condus de developer, care construiește website-uri moderne, aplicații web personalizate, platforme e-commerce și produse digitale cu AI pentru afaceri ambițioase.",
+    "INCODECRAFT este un studio digital independent, condus de developer, care construiește website-uri moderne, aplicații web, aplicații mobile pentru iOS și Android, platforme e-commerce și produse digitale cu AI pentru afaceri ambițioase.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.incodecraft.com",
   email: "hello@incodecraft.com",
   location: {
@@ -27,7 +27,7 @@ export const site = {
   footerLinks: {
     services: [
       { label: "Dezvoltare web", href: "/services/web-development" },
-      { label: "Aplicații web", href: "/services/web-applications" },
+      { label: "Aplicații web & mobile", href: "/services/web-applications" },
       { label: "E-commerce", href: "/services/ecommerce" },
       { label: "Integrări AI", href: "/services/ai-development" },
     ],
